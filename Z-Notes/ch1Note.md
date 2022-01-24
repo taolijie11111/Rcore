@@ -120,3 +120,13 @@ rust-objdump -s target/riscv64gc-unknown-none-elf/debug/os
 
 view  [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee-platform.html)  for more information
 
+1. unable to download 
+```
+ qemu-system-riscv64 \
+>     -machine virt \
+>     -nographic \
+>     -bios ../bootloader/rustsbi-qemu.bin \
+>     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 \
+>     -s -S
+qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
+```

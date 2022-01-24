@@ -75,3 +75,72 @@ qemu-system-riscv64: nographic: Could not open 'nographic': No such file or dire
 exit
 
 Script done on 2022-01-24 23:56:59+0800
+Script started on 2022-01-25 00:09:35+0800
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ cd os
+bash: cd: os: No such file or directory
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ cd ...[K
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore[00m$ cd os
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu-system-riscv64 \
+>     -machine virt \
+>     -nographic \
+>     -bios ../bootloader/rustsbi-qemu.bin \
+>     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=00x80200000 \
+>     -s -S
+qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ ^C
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rrcore/Rcore/os[00m$ [K[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$  [K[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qu[Kmeu run
+
+Command 'qmeu' not found, did you mean:
+
+  command 'qmenu' from deb qmenu
+
+Try: sudo apt install <deb name>
+
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qmeu run[1P run[1P run[1P rune runm runu run
+
+Command 'qemu' not found, did you mean:
+
+  command 'aqemu' from deb aqemu
+
+Try: sudo apt install <deb name>
+
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu run[K[K[K
+
+Command 'qemu' not found, did you mean:
+
+  command 'aqemu' from deb aqemu
+
+Try: sudo apt install <deb name>
+
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ stat target/riscv64gc-unknoown-none-elf/release/os.bin
+  File: target/riscv64gc-unknown-none-elf/release/os.bin
+  Size: 4         	Blocks: 8          IO Block: 4096   regular file
+Device: 801h/2049d	Inode: 1317437     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/taolijie)   Gid: ( 1000/taolijie)
+Access: 2022-01-25 00:02:13.793588537 +0800
+Modify: 2022-01-24 23:38:15.350712755 +0800
+Change: 2022-01-24 23:38:15.350712755 +0800
+ Birth: -
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu-system-riscv64 
+VNC server running on 127.0.0.1:5900
+machine virt
+nographic
+bios ../bootloader/rustsbi-qemu.bin 
+device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 \ 
+^Cqemu-system-riscv64: terminating on signal 2
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu-system-riscv64 \
+>     -machine virt \
+>     -nographic \
+>     -bios ../bootloader/rustsbi-qemu.bin \
+>     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0xx80200000 \
+>     -s -S
+qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ V[Kriscv64-unknown-elf-gdb \
+>     -ex 'file target/riscv64gc-unknown-none-elf/release/os' \
+>     -ex 'set arch riscv:rv64' \
+>     -ex 'target remote localhost:1234'
+riscv64-unknown-elf-gdb: command not found
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ naosh [K[K[K[K[K[Kexit
+exit
+
+Script done on 2022-01-25 00:32:41+0800
