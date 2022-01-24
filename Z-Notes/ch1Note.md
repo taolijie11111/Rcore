@@ -17,11 +17,103 @@
 >一个现代编译器的主要工作流程如下：
 源代码（source code）→ 预处理器（preprocessor）→ 编译器（compiler）→ 汇编程序（assembler）→ 目标代码（object code）→ 链接器（linker）→ 可执行文件（executables），最后打包好的文件就可以给电脑去判读运行了
 
-## basic operation:
+## create basic and  remote reference from x86_64
+*  basic operation:
 **step 1:**
 ```
 cargo new os --bin
 ```
 * --bin means root is src/main.rs
 
-s
+**step 2:**
+```
+cd os 
+cargo run
+```
+it run with defult one this time 
+
+**step 3:**
+```
+rustc --print target-list | grep riscv
+```
+
+**step 4:**
+```
+rustc --print target-list | grep riscv
+cargo run --target riscv64gc-unknown-none-elf
+```
+result:
+>error[E0463]: can't find crate for `std`
+  |
+  = note: the `riscv64gc-unknown-none-elf` target may not support the standard library
+  = note: `std` is required by `os` because it does not declare `#![no_std]`
+  = help: consider building the standard library from source with `cargo build -Zbuild-std`
+
+>error: cannot find macro `println` in this scope
+ --> src/main.rs:2:5
+  |
+2 |     println!("Hello, world!");
+  |     ^^^^^^^
+
+>error: `#[panic_handler]` function required, but not found
+
+>For more information about this error, try `rustc --explain E0463`.
+error: could not compile `os` due to 3 previous errors
+
+**step 5:**
+create file "config"
+```
+mkdir .cargo #attention :this is .cargo but not cargo
+vim config
+```
+```
+#wirte in config 
+[build]
+target="riscv64gc-unknown-none-elf"
+```
+**step 6:**
+```
+cd ..
+cd src
+vim lang_items.rs
+```
+
+**step 7:**
+```
+// write in os/src/lang_items.rs
+use core::panic::PanicInfo;
+
+#[panic_handler]
+fn panic(_info: &PanicInfo)->!{
+    loop{}
+}
+
+//os/src/main.rs
+#![no_std] 
+#![no_main]
+
+mod lang_items;
+```
+
+**step 8:**
+```
+cargo build
+```
+result:
+> Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+>    Finished dev [unoptimized + debuginfo] target(s) in 0.70s
+
+**analyse**
+```
+#cd os
+file target/riscv64gc-unknown-none-elf/debug/os
+rust-readobj -h target/riscv64gc-unknown-none-elf/debug/os
+rust-objdump -s target/riscv64gc-unknown-none-elf/debug/os
+```
+
+<img src="./images/1.png" >
+
+0 means NULL or nullptr,it is  NULL
+
+
+##

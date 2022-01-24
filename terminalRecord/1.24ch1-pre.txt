@@ -1,0 +1,431 @@
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ git check ch1
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar commands are
+        checkout
+        check-attr
+        cherry
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ git checkout ch1
+error: pathspec 'ch1' did not match any file(s) known to git.
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ git push
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 202 bytes | 202.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:taolijie11111/Rcore
+ * [new branch]      master -> master
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ mikir terminalRecord
+mikir: command not found
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ mkdir terminalRecord
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cd terminalRecord
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/terminalRecord$ scirpt
+
+Command 'scirpt' not found, did you mean:
+
+  command 'script' from deb bsdutils
+
+Try: sudo apt install <deb name>
+
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/terminalRecord$ script -a 1.24ch1
+Script started, file is 1.24ch1
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/terminalRecord$ cd ~/Desktop/rcore/Rcore
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ git push
+Everything up-to-date
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cargo new os --bin
+     Created binary (application) `os` package
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cat ./main.rs
+cat: ./main.rs: No such file or directory
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cd os
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cargo run
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.39s
+     Running `target/debug/os`
+Hello, world!
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ strace target/debug/osexecve("target/debug/os", ["target/debug/os"], 0x7fff847d9e90 /* 72 vars */) = 0
+brk(NULL)                               = 0x5572e5b2c000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=76302, ...}) = 0
+mmap(NULL, 76302, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7efe3eda1000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=96616, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe3ed9f000
+mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe3e973000
+mprotect(0x7efe3e98a000, 2093056, PROT_NONE) = 0
+mmap(0x7efe3eb89000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7efe3eb89000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\"\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=31680, ...}) = 0
+mmap(NULL, 2128864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe3e76b000
+mprotect(0x7efe3e772000, 2093056, PROT_NONE) = 0
+mmap(0x7efe3e971000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7efe3e971000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000b\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=144976, ...}) = 0
+mmap(NULL, 2221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe3e54c000
+mprotect(0x7efe3e566000, 2093056, PROT_NONE) = 0
+mmap(0x7efe3e765000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7efe3e765000
+mmap(0x7efe3e767000, 13440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efe3e767000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14560, ...}) = 0
+mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe3e348000
+mprotect(0x7efe3e34b000, 2093056, PROT_NONE) = 0
+mmap(0x7efe3e54a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7efe3e54a000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\35\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030928, ...}) = 0
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7efe3df57000
+mprotect(0x7efe3e13e000, 2097152, PROT_NONE) = 0
+mmap(0x7efe3e33e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7efe3e33e000
+mmap(0x7efe3e344000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7efe3e344000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efe3ed9d000
+arch_prctl(ARCH_SET_FS, 0x7efe3ed9e200) = 0
+mprotect(0x7efe3e33e000, 16384, PROT_READ) = 0
+mprotect(0x7efe3e54a000, 4096, PROT_READ) = 0
+mprotect(0x7efe3e765000, 4096, PROT_READ) = 0
+mprotect(0x7efe3e971000, 4096, PROT_READ) = 0
+mprotect(0x7efe3eb89000, 4096, PROT_READ) = 0
+mprotect(0x5572e5159000, 12288, PROT_READ) = 0
+mprotect(0x7efe3edb4000, 4096, PROT_READ) = 0
+munmap(0x7efe3eda1000, 76302)           = 0
+set_tid_address(0x7efe3ed9e4d0)         = 16874
+set_robust_list(0x7efe3ed9e4e0, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7efe3e551cb0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7efe3e55e980}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7efe3e551d50, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7efe3e55e980}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efe3df96040}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x5572e4f31f20, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7efe3e55e980}, NULL, 8) = 0
+rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGBUS, {sa_handler=0x5572e4f31f20, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7efe3e55e980}, NULL, 8) = 0
+sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efe3edb1000
+mprotect(0x7efe3edb1000, 4096, PROT_NONE) = 0
+sigaltstack({ss_sp=0x7efe3edb2000, ss_flags=0, ss_size=8192}, NULL) = 0
+brk(NULL)                               = 0x5572e5b2c000
+brk(0x5572e5b4d000)                     = 0x5572e5b4d000
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY|O_CLOEXEC) = 3
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "5572e4f12000-5572e4f59000 r-xp 0"..., 1024) = 1024
+read(3, "64-linux-gnu/libdl-2.27.so\n7efe3"..., 1024) = 1024
+read(3, "                 /lib/x86_64-lin"..., 1024) = 1024
+read(3, "         /lib/x86_64-linux-gnu/l"..., 1024) = 522
+close(3)                                = 0
+sched_getaffinity(16874, 32, [0])       = 8
+write(1, "Hello, world!\n", 14Hello, world!
+)         = 14
+sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
+munmap(0x7efe3edb1000, 12288)           = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ rust --version --verbose
+
+Command 'rust' not found, did you mean:
+
+  command 'dust' from snap dust (v0.7.5)
+  command 'trust' from deb p11-kit
+  command 'rustc' from deb rustc
+  command 'rush' from deb rush
+  command 'rst' from deb bro-aux
+
+See 'snap info <snapname>' for additional versions.
+
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cargo run --target riscv64gc-unknown-none-elf
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error[E0463]: can't find crate for `std`
+  |
+  = note: the `riscv64gc-unknown-none-elf` target may not support the standard library
+  = note: `std` is required by `os` because it does not declare `#![no_std]`
+  = help: consider building the standard library from source with `cargo build -Zbuild-std`
+
+error: cannot find macro `println` in this scope
+ --> src/main.rs:2:5
+  |
+2 |     println!("Hello, world!");
+  |     ^^^^^^^
+
+error: `#[panic_handler]` function required, but not found
+
+For more information about this error, try `rustc --explain E0463`.
+error: could not compile `os` due to 3 previous errors
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ tree os
+
+Command 'tree' not found, but can be installed with:
+
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+sudo apt  install tree
+
+See 'snap info tree' for additional versions.
+
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cd /
+taolijie@taolijie-VirtualBox:/$ cd ^C
+taolijie@taolijie-VirtualBox:/$ cd ~/Desktop/rcore/Rcore/
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ tree os
+
+Command 'tree' not found, but can be installed with:
+
+sudo snap install tree  # version 1.8.0+pkg-3fd6, or
+sudo apt  install tree
+
+See 'snap info tree' for additional versions.
+
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ sudo apt  install tree
+[sudo] password for taolijie: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  fonts-liberation2 fonts-opensymbol gir1.2-gst-plugins-base-1.0
+  gir1.2-gstreamer-1.0 gir1.2-gudev-1.0 gir1.2-udisks-2.0
+  grilo-plugins-0.3-base gstreamer1.0-gtk3 libboost-date-time1.65.1
+  libboost-filesystem1.65.1 libboost-iostreams1.65.1 libboost-locale1.65.1
+  libcdr-0.1-1 libclucene-contribs1v5 libclucene-core1v5 libcmis-0.5-5v5
+  libcolamd2 libdazzle-1.0-0 libe-book-0.1-1 libedataserverui-1.2-2 libeot0
+  libepubgen-0.1-1 libetonyek-0.1-1 libexiv2-14 libfreerdp-client2-2
+  libfreerdp2-2 libgc1c2 libgee-0.8-2 libgexiv2-2 libgom-1.0-0 libgpgmepp6
+  libgpod-common libgpod4 liblangtag-common liblangtag1 liblirc-client0
+  liblua5.3-0 libmediaart-2.0-0 libmspub-0.1-1 libodfgen-0.1-1 libqqwing2v5
+  libraw16 librevenge-0.0-0 libsgutils2-2 libssh-4 libsuitesparseconfig5
+  libvncclient1 libwinpr2-2 libxapian30 libxmlsec1 libxmlsec1-nss lp-solve
+  media-player-info python3-mako python3-markupsafe syslinux
+  syslinux-common syslinux-legacy usb-creator-common
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 22 not upgraded.
+Need to get 40.7 kB of archives.
+After this operation, 105 kB of additional disk space will be used.
+Get:1 http://cn.archive.ubuntu.com/ubuntu bionic/universe amd64 tree amd64 1.7.0-5 [40.7 kB]
+Fetched 40.7 kB in 1s (37.0 kB/s)
+Selecting previously unselected package tree.
+(Reading database ... 162993 files and directories currently installed.)
+Preparing to unpack .../tree_1.7.0-5_amd64.deb ...
+Unpacking tree (1.7.0-5) ...
+Setting up tree (1.7.0-5) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ tree os
+os
+├── Cargo.lock
+├── Cargo.toml
+├── src
+│   └── main.rs
+└── target
+    ├── CACHEDIR.TAG
+    ├── debug
+    │   ├── build
+    │   ├── deps
+    │   │   ├── os-c4e64d229733e3a7
+    │   │   └── os-c4e64d229733e3a7.d
+    │   ├── examples
+    │   ├── incremental
+    │   │   └── os-16na5df11z2at
+    │   │       ├── s-g6ee7wb5z1-tior5d-3mt5urwuikri5
+    │   │       │   ├── 112kg9buoe2lo44n.o
+    │   │       │   ├── 18q92oyfnj4furb8.o
+    │   │       │   ├── 2y3i1vht6gdp2gew.o
+    │   │       │   ├── 33500th6d3sbqqsq.o
+    │   │       │   ├── 3n1ymy2pxpgql4cu.o
+    │   │       │   ├── 4c5rlul3obj6dbi3.o
+    │   │       │   ├── 4ke7su1k8n4m5z4b.o
+    │   │       │   ├── 5ct6kaxeqdsq7o2p.o
+    │   │       │   ├── dep-graph.bin
+    │   │       │   ├── query-cache.bin
+    │   │       │   └── work-products.bin
+    │   │       └── s-g6ee7wb5z1-tior5d.lock
+    │   ├── os
+    │   └── os.d
+    └── riscv64gc-unknown-none-elf
+        ├── CACHEDIR.TAG
+        └── debug
+            ├── build
+            ├── deps
+            │   └── os-1ee2bc86448aa2d0.d
+            ├── examples
+            └── incremental
+                └── os-13pmrkog1x3iv
+                    ├── s-g6efru2qsi-21jecb.lock
+                    └── s-g6efru2qsi-21jecb-working
+                        └── dep-graph.part.bin
+
+17 directories, 24 files
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cd os
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target/debug/os`
+Hello, world!
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ rustc --print target-list | grep riscv
+riscv32gc-unknown-linux-gnu
+riscv32gc-unknown-linux-musl
+riscv32i-unknown-none-elf
+riscv32imac-unknown-none-elf
+riscv32imc-esp-espidf
+riscv32imc-unknown-none-elf
+riscv64gc-unknown-freebsd
+riscv64gc-unknown-linux-gnu
+riscv64gc-unknown-linux-musl
+riscv64gc-unknown-none-elf
+riscv64imac-unknown-none-elf
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cargo run --target riscv64imac-unknown-none-elf
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error[E0463]: can't find crate for `std`
+  |
+  = note: the `riscv64imac-unknown-none-elf` target may not be installed
+  = help: consider downloading the target with `rustup target add riscv64imac-unknown-none-elf`
+  = help: consider building the standard library from source with `cargo build -Zbuild-std`
+
+error: cannot find macro `println` in this scope
+ --> src/main.rs:2:5
+  |
+2 |     println!("Hello, world!");
+  |     ^^^^^^^
+
+error: requires `sized` lang_item
+
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ 
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ mkdir cargo
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ vim config
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ tree os
+os [error opening dir]
+
+0 directories, 0 files
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cd ..
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ tree os
+os
+├── cargo
+├── Cargo.lock
+├── Cargo.toml
+├── config
+├── src
+│   └── main.rs
+└── target
+    ├── CACHEDIR.TAG
+    ├── debug
+    │   ├── build
+    │   ├── deps
+    │   │   ├── os-c4e64d229733e3a7
+    │   │   └── os-c4e64d229733e3a7.d
+    │   ├── examples
+    │   ├── incremental
+    │   │   └── os-16na5df11z2at
+    │   │       ├── s-g6ee7wb5z1-tior5d-3mt5urwuikri5
+    │   │       │   ├── 112kg9buoe2lo44n.o
+    │   │       │   ├── 18q92oyfnj4furb8.o
+    │   │       │   ├── 2y3i1vht6gdp2gew.o
+    │   │       │   ├── 33500th6d3sbqqsq.o
+    │   │       │   ├── 3n1ymy2pxpgql4cu.o
+    │   │       │   ├── 4c5rlul3obj6dbi3.o
+    │   │       │   ├── 4ke7su1k8n4m5z4b.o
+    │   │       │   ├── 5ct6kaxeqdsq7o2p.o
+    │   │       │   ├── dep-graph.bin
+    │   │       │   ├── query-cache.bin
+    │   │       │   └── work-products.bin
+    │   │       └── s-g6ee7wb5z1-tior5d.lock
+    │   ├── os
+    │   └── os.d
+    ├── riscv64gc-unknown-none-elf
+    │   ├── CACHEDIR.TAG
+    │   └── debug
+    │       ├── build
+    │       ├── deps
+    │       │   └── os-1ee2bc86448aa2d0.d
+    │       ├── examples
+    │       └── incremental
+    │           └── os-13pmrkog1x3iv
+    │               ├── s-g6efru2qsi-21jecb.lock
+    │               └── s-g6efru2qsi-21jecb-working
+    │                   └── dep-graph.part.bin
+    └── riscv64imac-unknown-none-elf
+        ├── CACHEDIR.TAG
+        └── debug
+            ├── build
+            ├── deps
+            │   └── os-af568cd4754da16f.d
+            ├── examples
+            └── incremental
+                └── os-84bbxjhwmknv
+                    ├── s-g6eg174ls5-1td80zs.lock
+                    └── s-g6eg174ls5-1td80zs-working
+                        └── dep-graph.part.bin
+
+26 directories, 29 files
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cd os
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cargo build
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error: cannot find macro `println` in this scope
+ --> src/main.rs:3:5
+  |
+3 |     println!("Hello, world!");
+  |     ^^^^^^^
+
+error: language item required, but not found: `eh_personality`
+  |
+  = note: this can occur when a binary crate with `#![no_std]` is compiled for a target where `eh_personality` is defined in the standard library
+  = help: you may be able to compile for a target that doesn't need `eh_personality`, specify a target with `--target` or in `.cargo/config`
+
+error: `#[panic_handler]` function required, but not found
+
+error: could not compile `os` due to 3 previous errors
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ cd src
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ vim lang_items.rs
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ cargo build
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error: cannot find macro `println` in this scope
+ --> src/main.rs:3:5
+  |
+3 |     println!("Hello, world!");
+  |     ^^^^^^^
+
+error: language item required, but not found: `eh_personality`
+  |
+  = note: this can occur when a binary crate with `#![no_std]` is compiled for a target where `eh_personality` is defined in the standard library
+  = help: you may be able to compile for a target that doesn't need `eh_personality`, specify a target with `--target` or in `.cargo/config`
+
+error: `#[panic_handler]` function required, but not found
+
+error: could not compile `os` due to 3 previous errors
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ cargo build
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error: language item required, but not found: `eh_personality`
+  |
+  = note: this can occur when a binary crate with `#![no_std]` is compiled for a target where `eh_personality` is defined in the standard library
+  = help: you may be able to compile for a target that doesn't need `eh_personality`, specify a target with `--target` or in `.cargo/config`
+
+error: could not compile `os` due to previous error
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ cargo build
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error: language item required, but not found: `eh_personality`
+  |
+  = note: this can occur when a binary crate with `#![no_std]` is compiled for a target where `eh_personality` is defined in the standard library
+  = help: you may be able to compile for a target that doesn't need `eh_personality`, specify a target with `--target` or in `.cargo/config`
+
+error: could not compile `os` due to previous error
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ cargo build
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error: language item required, but not found: `eh_personality`
+  |
+  = note: this can occur when a binary crate with `#![no_std]` is compiled for a target where `eh_personality` is defined in the standard library
+  = help: you may be able to compile for a target that doesn't need `eh_personality`, specify a target with `--target` or in `.cargo/config`
+
+error: could not compile `os` due to previous error
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ cargo build
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.70s
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ git pushEverything up-to-date
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ ^C
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os/src$ 
