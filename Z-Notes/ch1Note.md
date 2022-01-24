@@ -116,4 +116,7 @@ rust-objdump -s target/riscv64gc-unknown-none-elf/debug/os
 0 means NULL or nullptr,it is  NULL
 
 
-##
+## write first code 
+
+view  [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee-platform.html)  for more information
+

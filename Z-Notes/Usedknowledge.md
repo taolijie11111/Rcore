@@ -2,6 +2,8 @@
 
 ## terminal
 
+add new file --- touch
+
 ## markdown
 
 * [annotations](https://blog.csdn.net/wcy23580/article/details/84885989)
