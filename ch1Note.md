@@ -9,6 +9,5 @@ reference to [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/
 ## 现代编译器
 
 >一个现代编译器的主要工作流程如下：
-
 源代码（source code）→ 预处理器（preprocessor）→ 编译器（compiler）→ 汇编程序（assembler）→ 目标代码（object code）→ 链接器（linker）→ 可执行文件（executables），最后打包好的文件就可以给电脑去判读运行了
 
