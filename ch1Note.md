@@ -1,6 +1,12 @@
 # ch1 Application Execution Environment and Platform Support
 
-reference to [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee-platform.html) --Tsinghua University
+## essential information
+
+* reference to [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee-platform.html) --Tsinghua University
+* Rust nightly ,qemu,et al.
+* win10 and virual ubuntu18.4
+* vscode 
+
 
 ## reasons of using Rust 
 > * Rust 语言标准库–std 是让 Rust 语言开发的软件具备可移植性的基础，类似于 C 语言的 LibC 标准库。它是一组小巧的、经过实践检验的共享抽象，适用于更广泛的 Rust 生态系统开发。它提供了核心类型，如 Vec 和 Option、类库定义的语言原语操作、标准宏、I/O 和多线程等。默认情况下，我们可以使用 Rust 语言标准库来支持 Rust 应用程序的开发。但 Rust 语言标准库的一个限制是，它需要有操作系统的支持。所以，如果你要实现的软件是运行在裸机上的操作系统，就不能直接用 Rust 语言标准库了。
@@ -11,3 +17,11 @@ reference to [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/
 >一个现代编译器的主要工作流程如下：
 源代码（source code）→ 预处理器（preprocessor）→ 编译器（compiler）→ 汇编程序（assembler）→ 目标代码（object code）→ 链接器（linker）→ 可执行文件（executables），最后打包好的文件就可以给电脑去判读运行了
 
+## basic operation:
+**step 1:**
+```
+cargo new os --bin
+```
+* --bin means root is src/main.rs
+
+s

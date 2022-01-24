@@ -4,6 +4,9 @@
 
 ## markdown
 
+* [annotations](https://blog.csdn.net/wcy23580/article/details/84885989)
+
+
 * 返回上级目录:
 
     * cd ..返回上级目录（更高一级目录）
@@ -20,7 +23,7 @@
 ## rust
 
 ## tools
-* tree:gained constructure
+* tree:gained constructure////
 
 ```
 taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ tree os
