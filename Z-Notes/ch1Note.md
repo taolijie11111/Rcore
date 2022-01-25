@@ -3,6 +3,9 @@
 ## essential information
 
 * reference to [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee-platform.html) --Tsinghua University
+
+use [rCore-virtual-3](https://rcore-os.github.io/rCore-Tutorial-deploy/docs/pre-lab/gdb.html)
+
 * Rust nightly ,qemu,et al.
 * win10 and virual ubuntu18.4
 * vscode 
@@ -131,4 +134,6 @@ view  [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee
 qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
 ```
   *  change `../bootloader/rustsbi-qemu.bin` to `default`, but can't run
+  
+
   
