@@ -248,3 +248,11 @@ warning: `os` (bin "os") generated 2 warnings
 
 OpenSBI v0.6
 ```
+
+before not add file"rust-toolchain"
+
+then when I add it ,it seemed like there are so many error
+
+
+## third times
+change rust-toolchain's version

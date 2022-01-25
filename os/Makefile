@@ -20,7 +20,6 @@ kernel:
 	@cargo build
 
 # 生成 kernel 的二进制文件
-# @means don't view back
 $(BIN_FILE): kernel
 	@$(OBJCOPY) $(KERNEL_FILE) --strip-all -O binary $@
 

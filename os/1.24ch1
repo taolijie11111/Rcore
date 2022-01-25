@@ -1,0 +1,298 @@
+Script started on 2022-01-25 21:18:22+0800
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ carfo [K[K[Kgo run
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.78s
+[0m[0m[1m[32m     Running[0m `target/debug/os`
+Hello, world!
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cargo build
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[38;5;9merror[0m[0m[1m: linking with `cc` failed: exit status: 1[0m
+[0m  [0m[0m[1m[38;5;12m|[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: "cc" "-m64" "/home/taolijie/Desktop/rcore/Rcore/os/target/debug/deps/os-c4a8796531140b4d.3diglooird0ju1ym.rcgu.o" "-Wl,--as-needed" "-L" "/home/taolijie/Desktop/rcore/Rcore/os/target/debug/deps" "-L" "/home/taolijie/.rustup/toolchains/nightly-2022-01-13-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-Wl,-Bstatic" "/home/taolijie/.rustup/toolchains/nightly-2022-01-13-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_std_workspace_core-2a6a2797f7a73818.rlib" "/home/taolijie/.rustup/toolchains/nightly-2022-01-13-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-0e3656b1fda5fd7b.rlib" "/home/taolijie/.rustup/toolchains/nightly-2022-01-13-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-f98cce041f593917.rlib" "-Wl,-Bdynamic" "-Wl,--eh-frame-hdr" "-Wl,-znoexecstack" "-L" "/home/taolijie/.rustup/toolchains/nightly-2022-01-13-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-o" "/home/taolijie/Desktop/rcore/Rcore/os/target/debug/deps/os-c4a8796531140b4d" "-Wl,--gc-sections" "-pie" "-Wl,-zrelro,-znow" "-nodefaultlibs"[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: /home/taolijie/Desktop/rcore/Rcore/os/target/debug/deps/os-c4a8796531140b4d.3diglooird0ju1ym.rcgu.o: In function `_start':[0m
+[0m          /home/taolijie/Desktop/rcore/Rcore/os/src/main.rs:23: multiple definition of `_start'[0m
+[0m          /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o:(.text+0x0): first defined here[0m
+[0m          /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':[0m
+[0m          (.text+0x12): undefined reference to `__libc_csu_fini'[0m
+[0m          (.text+0x19): undefined reference to `__libc_csu_init'[0m
+[0m          (.text+0x20): undefined reference to `main'[0m
+[0m          (.text+0x26): undefined reference to `__libc_start_main'[0m
+[0m          collect2: error: ld returned 1 exit status[0m
+[0m          [0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mhelp[0m[0m: some `extern` functions couldn't be found; some native libraries may need to be installed or have their path specified[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: use the `-l` flag to specify native libraries to link[0m
+[0m  [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: use the `cargo:rustc-link-lib` directive to specify the native libraries to link with Cargo (see https://doc.rust-lang.org/cargo/reference/build-scripts.html#cargorustc-link-libkindname)[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[31merror[0m[1m:[0m could not compile `os` due to previous error
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rustc --version --verbose
+rustc 1.60.0-nightly (1bd4fdc94 2022-01-12)
+binary: rustc
+commit-hash: 1bd4fdc943513e1004f498bbf289279c9784fc6f
+commit-date: 2022-01-12
+host: x86_64-unknown-linux-gnu
+release: 1.60.0-nightly
+LLVM version: 13.0.0
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rustup target add riscv64imac-unknownn-none-elf
+[1minfo: (B[mdownloading component 'rust-std' for 'riscv64imac-unknown-none-elf'
+[1minfo: (B[minstalling component 'rust-std' for 'riscv64imac-unknown-none-elf'
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cargo build --target riscv64imac-unknnown-none-elf
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.43s
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cargo build --target riscv64imac-unknnown-none-elf[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rustup target add riscv64imac-unknown[3P-none-elf[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cargo build --target riscv64imac-unknown-none-elf[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+[0m[0m[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.00s
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cargo install cargo-binutils
+llvm-tools-preview[0m[0m[1m[32m    Updating[0m `ustc` index
+[0m[0m[1m[36m       Fetch[0m [                         ]   0.00%, 17.88KiB/s                             [0m[0m[1m[36m       Fetch[0m [=======>                 ]  33.22%, 17.88KiB/s                             [0m[0m[1m[36m       Fetch[0m [===========>             ]  49.48%, 17.88KiB/s                             [K[0m[0m[1m[32m     Ignored[0m package `cargo-binutils v0.3.4` is already installed, use --force to override
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rustup component add llvm-tools-previiew
+[1minfo: (B[mdownloading component 'llvm-tools-preview'
+[1minfo: (B[minstalling component 'llvm-tools-preview'
+ 11.6 MiB /  22.0 MiB ( 53 %)   0 B/s in  1s ETA: Unknown                                                          22.0 MiB /  22.0 MiB (100 %)  11.6 MiB/s in  1s ETA:  0s
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ file target/riscv64imac-unknown-none--elf/debug/os
+target/riscv64imac-unknown-none-elf/debug/os: ELF 64-bit LSB executable, UCB RISC-V, version 1 (SYSV), statically linked, with debug_info, not stripped
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$  rust-objdump target/riscv64imac-unknnown-none-elf/debug/os -x --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:	file format elf64-littleriscv
+architecture: riscv64
+start address: 0x0000000000011120
+
+Program Header:
+    PHDR off    0x0000000000000040 vaddr 0x0000000000010040 paddr 0x0000000000010040 align 2**3
+         filesz 0x00000000000000e0 memsz 0x00000000000000e0 flags r--
+    LOAD off    0x0000000000000000 vaddr 0x0000000000010000 paddr 0x0000000000010000 align 2**12
+         filesz 0x0000000000000120 memsz 0x0000000000000120 flags r--
+    LOAD off    0x0000000000000120 vaddr 0x0000000000011120 paddr 0x0000000000011120 align 2**12
+         filesz 0x0000000000000004 memsz 0x0000000000000004 flags r-x
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**64
+         filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-
+
+Dynamic Section:
+
+Sections:
+Idx Name              Size     VMA              Type
+  0                   00000000 0000000000000000 
+  1 .text             00000004 0000000000011120 TEXT
+  2 .debug_abbrev     00000113 0000000000000000 DEBUG
+  3 .debug_info       00000542 0000000000000000 DEBUG
+  4 .debug_aranges    00000040 0000000000000000 DEBUG
+  5 .debug_ranges     00000030 0000000000000000 DEBUG
+  6 .debug_str        00000409 0000000000000000 DEBUG
+  7 .debug_pubnames   000000b8 0000000000000000 DEBUG
+  8 .debug_pubtypes   000002ec 0000000000000000 DEBUG
+  9 .riscv.attributes 0000002b 0000000000000000 
+ 10 .debug_frame      00000050 0000000000000000 DEBUG
+ 11 .debug_line       00000067 0000000000000000 DEBUG
+ 12 .comment          00000013 0000000000000000 
+ 13 .symtab           00000150 0000000000000000 
+ 14 .shstrtab         000000b7 0000000000000000 
+ 15 .strtab           0000002d 0000000000000000 
+
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*	0000000000000000 3ng0hj6dx66uzp3t
+0000000000011120 l       .text	0000000000000000 
+0000000000011120 l       .text	0000000000000000 
+0000000000011120 l       .text	0000000000000000 
+0000000000011120 l       .text	0000000000000000 
+0000000000011124 l       .text	0000000000000000 
+0000000000011124 l       .text	0000000000000000 
+0000000000000000 l       .debug_info	0000000000000000 
+0000000000000000 l       .debug_line	0000000000000000 .Lline_table_start0
+0000000000000000 l       .debug_ranges	0000000000000000 
+0000000000011124 l       .text	0000000000000000 
+0000000000000000 l       .debug_frame	0000000000000000 
+0000000000011120 g     F .text	0000000000000004 _start
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objdump target/riscv64imac-unknoown-none-elf/debug/os -d --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:	file format elf64-littleriscv
+
+Disassembly of section .text:
+
+0000000000011120 <_start>:
+   11120: 09 a0        	j	0x11122 <_start+0x2>
+   11122: 01 a0        	j	0x11122 <_start+0x2>
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objcopy target/riscv64imac-unknoown-none-elf/debug/os --strip-all -O binary target/riscv64imac-unknown-none-elf/debug/kernell.bin
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objcopy target/riscv64imac-unknoown-none-elf/debug/os --strip-all -O binary target/riscv64imac-unknown-none-elf/debug/kernell.bin
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cargo build
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.42s
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objdump target/riscv64imac-unknoown-none-elf/debug/os -h --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:	file format elf64-littleriscv
+
+Sections:
+Idx Name              Size     VMA              Type
+  0                   00000000 0000000000000000 
+  1 .text             00000004 0000000080200000 TEXT
+  2 .debug_abbrev     00000113 0000000000000000 DEBUG
+  3 .debug_info       00000542 0000000000000000 DEBUG
+  4 .debug_aranges    00000040 0000000000000000 DEBUG
+  5 .debug_ranges     00000030 0000000000000000 DEBUG
+  6 .debug_str        00000409 0000000000000000 DEBUG
+  7 .debug_pubnames   000000b8 0000000000000000 DEBUG
+  8 .debug_pubtypes   000002ec 0000000000000000 DEBUG
+  9 .riscv.attributes 0000002b 0000000000000000 
+ 10 .debug_frame      00000050 0000000000000000 DEBUG
+ 11 .debug_line       00000067 0000000000000000 DEBUG
+ 12 .comment          00000013 0000000000000000 
+ 13 .symtab           000001f8 0000000000000000 
+ 14 .shstrtab         000000b7 0000000000000000 
+ 15 .strtab           0000007f 0000000000000000 
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objdump target/riscv64imac-unknoown-none-elf/debug/os -d --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:	file format elf64-littleriscv
+
+Disassembly of section .text:
+
+0000000080200000 <text_start>:
+80200000: 09 a0        	j	0x80200002 <text_start+0x2>
+80200002: 01 a0        	j	0x80200002 <text_start+0x2>
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ V[Kqemu-system-riscv64 \
+>   --machine virt \
+>   --nographic \
+>   --bios default
+
+OpenSBI v0.6
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name          : QEMU Virt Machine
+Platform HART Features : RV64ACDFIMSU
+Platform Max HARTs     : 8
+Current Hart           : 0
+Firmware Base          : 0x80000000
+Firmware Size          : 120 KB
+Runtime SBI Version    : 0.2
+
+MIDELEG : 0x0000000000000222
+MEDELEG : 0x000000000000b109
+PMP0    : 0x0000000080000000-0x000000008001ffff (A)
+PMP1    : 0x0000000000000000-0xffffffffffffffff (A,R,W,X)
+QEMU: Terminated
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ vim Makr[Kefile
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;37r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[37;1H"Makefile" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                          [3;1H~                                                                                          [4;1H~                                                                                          [5;1H~                                                                                          [6;1H~                                                                                          [7;1H~                                                                                          [8;1H~                                                                                          [9;1H~                                                                                          [10;1H~                                                                                          [11;1H~                                                                                          [12;1H~                                                                                          [13;1H~                                                                                          [14;1H~                                                                                          [15;1H~                                                                                          [16;1H~                                                                                          [17;1H~                                                                                          [18;1H~                                                                                          [19;1H~                                                                                          [20;1H~                                                                                          [21;1H~                                                                                          [22;1H~                                                                                          [23;1H~                                                                                          [24;1H~                                                                                          [25;1H~                                                                                          [26;1H~                                                                                          [27;1H~                                                                                          [28;1H~                                                                                          [29;1H~                                                                                          [30;1H~                                                                                          [31;1H~                                                                                          [32;1H~                                                                                          [33;1H~                                                                                          [34;1H~                                                                                          [35;1H~                                                                                          [36;1H~                                                                                          [m[37;74H0,0-1[9CAll[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[37;64Hi[1;1H[37;64H [1;1H[37;1H[1m-- INSERT --[m[37;13H[K[37;74H0,1[11CAll[1;1H[?25h[?25l[36mTARGET      [m:= riscv64imac-unknown-none-elf[2;1H[K[2;1H[?25h[?25l[36mMODE        [m:= debug
+[36mKERNEL_FILE [m:= target/[36m$(TARGE[m[3;30H[K[3;30H[?25h[?25l[36mT)[m/[36m$(MODE)[m/os
+[36mBIN_FILE    [m:= target/[36m$(TARGET)[m/[36m$(MO[m[4;37H[K[4;37H[?25h[?25l[36mDE)[m/kernel.bin[5;1H[K[6;1H[36mOBJDUMP     [m:= rust-objdump --arch[6;35H[K[6;35H[?25h[?25l-name=riscv64
+[36mOBJCOPY     [m:= rust-objcopy --binary[7;37H[K[7;37H[?25h[?25l-architecture=riscv64[8;1H[K[9;1H[38;5;130m.PHONY:[m doc kernel build cl[9;28H[K[9;28H[?25h[?25lean qemu run[10;1H[K[11;1H[34m# 默认 build 为输出二进制文件[m[11;30H[K[12;1H[36mbuild:[m [36m$(BIN_FI[m[12;16H[K[12;16H[?25h[?25l[36mL[?25h[?25lE)[m[13;1H[K[14;1H[34m# 通过 Rust 文件中的注释生成 os 的文档[m[14;39H[K[15;1H[36mdoc:[m[15;5H[K[16;1H    [16;5H[K[16;5H[?25h[?25l[97m[101m    @cargo doc[?25h[?25l --document-private-items[m[17;1H[K[18;1H[34m# 编译 kernel[m[18;14H[K[19;1H[36mkernel:[m[19;8H[K[20;1H   [20;4H[K[20;4H[?25h[?25l[97m[101m    @cargo build[m[21;1H[K[22;1H[34m# 生成 kernel 的二进制文件[m[22;27H[K[23;1H[36m$(BIN_FILE):[m k[23;15H[K[23;15H[?25h[?25ler[?25h[?25lnel
+[35m    @[m[36m$(OBJCOPY)[m [36m$(KERNEL_FILE)[m --strip-all -O [24;47H[K[24;47H[?25h[?25lbinary [36m$@[m[25;1H[K[26;1H[34m# 查看反汇编结果[m[26;17H[K[27;1H[36masm:[m[27;5H[K[28;1H[97m[101m    @$(OBJDUMP) -d $(KER[m[28;25H[K[28;25H[?25h[?25l[97m[101mNEL_FILE) | less[m[29;1H[K[30;1H[34m# 清理编译出的文件[m[30;19H[K[31;1H[36mclean:[m[31;7H[K[32;1H[97m[101m    @cargo cle[m[32;15H[K[32;15H[?25h[?25l[97m[101man[m[33;1H[K[34;1H[34m# 运行 QEMU[m[34;12H[K[35;1H[36mqemu:[m build[35;12H[K[36;1H[35m    @[mqemu-system-riscv64[36;25H[K[36;25H[?25h[?25l [35m\[36;20H[?25h[?25l[1;36r[m[1;1H[2M[1;37r[35;1H[35m            [m-machine virt [35m\
+            [m-nographic [35m\[m[37;11H[1m(paste) --[m[37;74H[K[37;74H40,17[9C50%[36;17H[?25h[?25l[1;36r[1;1H[2M[1;37r[35;1H[35m            [m-bios default [35m\
+            [m-device loader,file=[36m$(BIN_FILE)[m,addr=0x80200000[37;74H[K[37;74H42,12-9[7C66%[36;9H[?25h[?25l[1;36r[1;1H[3M[1;37r[35;1H[34m# 一键运行[m
+[36mrun:[m build qemu[37;11H[1m--a[m[37;13H[K[37;74H43,16[9CBot[36;16H[?25h[?25l[37;75H0[33;16H[?25h[?25l[37;74H37[30;16H[?25h[?25l[37;75H4,14-12[27;12H[?25h[?25l[37;75H0,21-15[23;15H[?25h[?25l[37;74H27,5    [20;5H[?25h[?25l[17;7H[36m[106m([7C)[m[37;75H4,16[17;16H[?25h[?25l[17;7H[36m([7C)[m[37;75H0[13;16H[?25h[?25l[37;74H17,1 [10;1H[?25h[?25l[37;75H4,18-15[7;15H[?25h[?25l[1;36r[1;1H[3L[1;37r[2;1H[36mOBJDUMP     [m:= rust-objdump --arch-name=riscv64
+[36mOBJCOPY     [m:= rust-objcopy --binary-architecture=riscv64[37;74H[K[37;74H10,1[10C57%[6;1H[?25h[?25l[1;36r[1;1H[3L[1;37r[1;1H[36mMODE        [m:= debug
+[36mKERNEL_FILE [m:= target/[36m$(TARGET)[m/[36m$(MODE)[m/os
+[36mBIN_FILE    [m:= target/[36m$(TARGET)[m/[36m$(MODE)[m/kernel.bin[37;74H[K[37;74H7,16[10C14%[6;16H[?25h[?25l[1;36r[1;1H[L[1;37r[1;1H[36mTARGET      [m:= riscv64imac-unknown-none-elf[37;74H[K[37;74H4,16[10CTop[4;16H[?25h[?25l[37;74H1[1;16H[?25h[?25l[37;74H3[3;16H[?25h[?25l[37;74H7[7;16H[?25h[?25l[37;74H10,1[10;1H[?25h[?25l[37;75H3[13;1H[?25h[?25l[37;75H7[17;1H[?25h[?25l[37;75H6,16[16;16H[?25h[?25l[37;78H5[16;15H[?25h[?25l[37;78H4[16;14H[?25h[?25l[37;78H3[16;13H[?25h[?25l[37;78H2[16;12H[?25h[?25l[37;78H1[16;11H[?25h[?25l[37;78H0[16;10H[?25h[?25l[37;77H9 [16;9H[?25h[?25l[37;77H8[16;8H[?25h[?25l[37;77H7[16;7H[?25h[?25l[37;77H6[16;6H[?25h[?25l[37;77H5[16;5H[?25h[?25l[37;77H4[16;4H[?25h[?25l[37;77H3[16;3H[?25h[?25l[37;77H2[16;2H[?25h[?25l[37;77H1[16;1H[?25h[?25l[37;77H2[16;2H[?25h[?25l[37;77H3[16;3H[?25h[?25l[37;77H4[16;4H[?25h[?25l[37;77H5[16;5H[?25h[?25l[97m[101m@cargo doc --document-private-items[m[16;39H[K[37;77H4[16;4H[?25h[?25l[97m[101m@cargo doc --document-private-items[m[16;38H[K[37;77H3[16;3H[?25h[?25l[97m[101m@cargo doc --document-private-items[m[16;37H[K[37;77H2[16;2H[?25h[?25l[35m@[mcargo doc --document-private-items[16;36H[K[37;77H1[16;1H[?25h[?25l[35m        @[m[31mcargo doc --document-private-items[m[37;77H2-9[16;9H[?25h[?25l[37;75H7,1  [17;1H[?25h[?25l[37;75H8,11-9[18;9H[?25h[?25l[37;75H9,8   [19;8H[?25h[?25l[37;74H20,9[20;9H[?25h[?25l[37;77H8[20;8H[?25h[?25l[37;77H7[20;7H[?25h[?25l[37;77H6[20;6H[?25h[?25l[37;77H5[20;5H[?25h[?25l[97m[101m@cargo build[m[20;16H[K[37;77H4[20;4H[?25h[?25l[97m[101m@cargo build[m[20;15H[K[37;77H3[20;3H[?25h[?25l[97m[101m@cargo build[m[20;14H[K[37;77H2[20;2H[?25h[?25l[35m@[mcargo build[20;13H[K[37;77H1[20;1H[?25h[?25l[35m        @[m[31mcargo build[m[37;77H2-9[20;9H[?25h[?25l[37;75H1,1  [21;1H[?25h[?25l[37;75H2,11-9[22;9H[?25h[?25l[37;75H3,9   [23;9H[?25h[?25l[37;75H4[24;9H[?25h[?25l[36m[106m([7C)[m[37;77H8[24;8H[?25h[?25l[37;77H7[24;7H[?25h[?25l[36m([7C)[m[37;77H6[24;6H[?25h[?25l[37;77H5[24;5H[?25h[?25l[35m@[m[36m$(OBJCOPY)[m [36m$(KERNEL_FILE)[m --strip-all -O binary [36m$@[m[24;55H[K[37;77H4[24;4H[?25h[?25l[35m@[m[36m$(OBJCOPY)[m [36m$(KERNEL_FILE)[m --strip-all -O binary [36m$@[m[24;54H[K[37;77H3[24;3H[?25h[?25l[35m@[m[36m$(OBJCOPY)[m [36m$(KERNEL_FILE)[m --strip-all -O binary [36m$@[m[24;53H[K[37;77H2[24;2H[?25h[?25l[35m@[m[36m$(OBJCOPY)[m [36m$(KERNEL_FILE)[m --strip-all -O binary [36m$@[m[24;52H[K[37;77H1[24;1H[?25h[?25l[35m        @[m[36m$(OBJCOPY)[m[31m [m[36m$(KERNEL_FILE)[m[31m --strip-all -O binary [m[36m$@[m[37;77H2-9[24;9H[?25h[?25l[37;75H5,1  [25;1H[?25h[?25l[37;75H6,12-9[26;9H[?25h[?25l[37;75H7,5   [27;5H[?25h[?25l[37;75H8,9[28;9H[?25h[?25l[37;75H9,1[29;1H[?25h[?25l[37;75H8,9[28;9H[?25h[?25l[97m[106m([7C)[m[37;77H8[28;8H[?25h[?25l[37;77H7[28;7H[?25h[?25l[97m[101m([7C)[m[37;77H6[28;6H[?25h[?25l[37;77H5[28;5H[?25h[?25l[97m[101m@$(OBJDUMP) -d $(KERNEL_FILE) | les[m[28;40H[K[37;77H4[28;4H[?25h[?25l[97m[101m@$(OBJDUMP) -d $(KERNEL_FILE) | les[m[28;39H[K[37;77H3[28;3H[?25h[?25l[97m[101m@$(OBJDUMP) -d $(KERNEL_FILE) | les[m[28;38H[K[37;77H2[28;2H[?25h[?25l[35m@[m[36m$(OBJDUMP)[m -d [36m$(KERNEL_FILE)[m | less[28;37H[K[37;77H1[28;1H[?25h[?25l[35m        @[m[36m$(OBJDUMP)[m[31m -d [m[36m$(KERNEL_FILE)[m[31m | less[m[37;77H2-9[28;9H[?25h[?25l[37;75H9,1  [29;1H[?25h[?25l[37;74H30,12-9[30;9H[?25h[?25l[37;75H1,7   [31;7H[?25h[?25l[1;36r[36;1H
+[1;37r[36;1H[35m            [m-machine virt [35m\[m[37;74H[K[37;74H32,9[10C14%[31;9H[?25h[?25l[37;77H8[31;8H[?25h[?25l[37;77H7[31;7H[?25h[?25l[37;77H6[31;6H[?25h[?25l[37;77H5[31;5H[?25h[?25l[97m[101m@cargo clean[m[31;16H[K[37;77H4[31;4H[?25h[?25l[97m[101m@cargo clean[m[31;15H[K[37;77H3[31;3H[?25h[?25l[97m[101m@cargo clean[m[31;14H[K[37;77H2[31;2H[?25h[?25l[35m@[mcargo clean[31;13H[K[37;77H1[31;1H[?25h[?25l[35m        @[m[31mcargo clean[m[37;77H2-9[31;9H[?25h[?25l[1;36r[1;1H[3M[1;37r[34;1H[35m            [m-nographic [35m\
+            [m-bios default [35m\
+            [m-device loader,file=[36m$(BIN_FILE)[m,addr=0x80200000[37;74H[K[37;74H35,9[10C57%[31;9H[?25h[?25l[1;36r[1;1H[3M[1;37r[35;1H[34m# 一键运行[m
+[36mrun:[m build qemu[37;74H[K[37;74H38,9[10CBot[31;9H[?25h[?25l[37;74H42,12-9[35;9H[?25h[?25l[37;75H3,9   [36;9H[?25h[?25l[37;75H0[33;9H[?25h[?25l[37;74H37[30;9H[?25h[?25l[37;75H4,11-9[27;9H[?25h[?25l[37;75H0,12[23;9H[?25h[?25l[37;74H27,5   [20;5H[?25h[?25l[37;75H4,2-9[17;9H[?25h[?25l[37;75H6,12-9[19;9H[?25h[?25l[37;74H30[23;9H[?25h[?25l[37;75H3,1   [26;1H[?25h[?25l[37;75H6,9[29;9H[?25h[?25l[37;75H9[32;9H[?25h[?25l[37;75H8[31;9H[?25h[?25l[37;75H7[30;9H[?25h[?25l[37;75H6[29;9H[?25h[?25l[37;77H8[29;8H[?25h[?25l[37;77H7[29;7H[?25h[?25l[37;77H6[29;6H[?25h[?25l[37;77H5[29;5H[?25h[?25l[35m@[mqemu-system-riscv64 [35m\[m[29;26H[K[37;77H4[29;4H[?25h[?25l[35m@[mqemu-system-riscv64 [35m\[m[29;25H[K[37;77H3[29;3H[?25h[?25l[35m@[mqemu-system-riscv64 [35m\[m[29;24H[K[37;77H2[29;2H[?25h[?25l[35m@[mqemu-system-riscv64 [35m\[m[29;23H[K[37;77H1[29;1H[?25h[?25l[35m        @[m[31mqemu-system-riscv64 [m[35m\[m
+[31m            -machine virt 
+            -nographic 
+            -bios default 
+            -device loader,file=[11C,addr=0x80200000[m[37;77H2-9[29;9H[?25h[?25l[37;74H40,9  [33;9H[?25h[?25l[37;75H3[36;9H[?25h[37;1H[K[36;8H[?25l[37;64H^[[36;8H[37;64H  [36;9H[37;74H43,8[10CBot[36;8H[?25h[?25l[37;64H:[36;8H[37;64H[K[37;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l"Makefile" 43L, 952C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ makr [K[Ke run
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[38;5;9merror[0m[0m[1m: cannot find macro `global_asm` in this scope[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:19:1[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m19[0m[0m [0m[0m[1m[38;5;12m| [0m[0mglobal_asm!(include_str!("entry.asm"));[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;9m^^^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: consider importing this macro:[0m
+[0m           core::arch::global_asm[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[33mwarning[0m[0m[1m: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:38:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m38[0m[0m [0m[0m[1m[38;5;12m| [0m[0m        llvm_asm!("ecall"[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(deprecated)]` on by default[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[33mwarning[0m[1m:[0m `os` (bin "os") generated 1 warning
+[0m[0m[1m[31merror[0m[1m:[0m could not compile `os` due to previous error; 1 warning emitted
+Makefile:20: recipe for target 'kernel' failed
+make: *** [kernel] Error 101
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ make run
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[33mwarning[0m[0m[1m: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:38:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m38[0m[0m [0m[0m[1m[38;5;12m| [0m[0m        llvm_asm!("ecall"[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(deprecated)]` on by default[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[33mwarning[0m[0m[1m: the feature `global_asm` has been stable since 1.59.0 and no longer requires an attribute to enable[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:16:12[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m16[0m[0m [0m[0m[1m[38;5;12m| [0m[0m#![feature(global_asm)][0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m           [0m[0m[1m[33m^^^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(stable_features)]` on by default[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[33mwarning[0m[1m:[0m `os` (bin "os") generated 2 warnings
+[0m[0m[1m[32m    Finished[0m dev [unoptimized + debuginfo] target(s) in 0.23s
+
+OpenSBI v0.6
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name          : QEMU Virt Machine
+Platform HART Features : RV64ACDFIMSU
+Platform Max HARTs     : 8
+Current Hart           : 0
+Firmware Base          : 0x80000000
+Firmware Size          : 120 KB
+Runtime SBI Version    : 0.2
+
+MIDELEG : 0x0000000000000222
+MEDELEG : 0x000000000000b109
+PMP0    : 0x0000000080000000-0x000000008001ffff (A)
+PMP1    : 0x0000000000000000-0xffffffffffffffff (A,R,W,X)
+OK
+QEMU: Terminated
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ make run
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[38;5;9merror[0m[0m[1m: cannot find macro `global_asm` in this scope[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/main.rs:28:1[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m28[0m[0m [0m[0m[1m[38;5;12m| [0m[0mglobal_asm!(include_str!("entry.asm"));[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m[1m[38;5;9m^^^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: consider importing this macro:[0m
+[0m           core::arch::global_asm[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[33mwarning[0m[0m[1m: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/sbi.rs:10:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m10[0m[0m [0m[0m[1m[38;5;12m| [0m[0m        llvm_asm!("ecall"[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(deprecated)]` on by default[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[0m[1m[33mwarning[0m[1m:[0m `os` (bin "os") generated 1 warning
+[0m[0m[1m[31merror[0m[1m:[0m could not compile `os` due to previous error; 1 warning emitted
+Makefile:20: recipe for target 'kernel' failed
+make: *** [kernel] Error 101
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ make run
+[0m[0m[1m[32m   Compiling[0m os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                                [K[0m[1m[33mwarning[0m[0m[1m: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead[0m
+[0m  [0m[0m[1m[38;5;12m--> [0m[0msrc/sbi.rs:10:9[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m[1m[38;5;12m10[0m[0m [0m[0m[1m[38;5;12m| [0m[0m        llvm_asm!("ecall"[0m
+[0m   [0m[0m[1m[38;5;12m| [0m[0m        [0m[0m[1m[33m^^^^^^^^[0m
+[0m   [0m[0m[1m[38;5;12m|[0m
+[0m   [0m[0m[1m[38;5;12m= [0m[0m[1mnote[0m[0m: `#[warn(deprecated)]` on by default[0m
+
+[0m[0m[1m[36m    Building[0m [                             ] 0/1: os(bin)                
