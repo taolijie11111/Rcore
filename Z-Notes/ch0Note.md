@@ -136,4 +136,65 @@ qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-q
   *  change `../bootloader/rustsbi-qemu.bin` to `default`, but can't run
   
 
+## view information with rust-objdump
+
+```s
+rust-objdump target/riscv64imac-unknown-none-elf/debug/os -x --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:   file format elf64-littleriscv
+architecture: riscv64
+# 程序的入口地址
+start address: 0x0000000000011120 
+
+#Program Header：程序加载时所需的段信息
+#其中的 off 是它在文件中的位置，vaddr 和 paddr 是要加载到的虚拟地址和物理地址，align 规定了地址的对齐，filesz 和 memsz 分别表示它在文件和内存中的大小，flags 描述了相关权限（r 表示可读，w 表示可写，x 表示可执行）
+Program Header:
+    PHDR off    0x0000000000000040 vaddr 0x0000000000010040 paddr 0x0000000000010040 align 2**3
+         filesz 0x00000000000000e0 memsz 0x00000000000000e0 flags r--
+    LOAD off    0x0000000000000000 vaddr 0x0000000000010000 paddr 0x0000000000010000 align 2**12
+         filesz 0x0000000000000120 memsz 0x0000000000000120 flags r--
+    LOAD off    0x0000000000000120 vaddr 0x0000000000011120 paddr 0x0000000000011120 align 2**12
+         filesz 0x0000000000000004 memsz 0x0000000000000004 flags r-x
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**64
+         filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-
+
+Dynamic Section:
+
+#Sections：从这里我们可以看到程序各段的各种信息。后面以 debug 开头的段是调试信息
+Sections:
+Idx Name              Size     VMA              Type
+  0                   00000000 0000000000000000 
+  1 .text             00000004 0000000000011120 TEXT
+  2 .debug_abbrev     00000113 0000000000000000 DEBUG
+  3 .debug_info       00000542 0000000000000000 DEBUG
+  4 .debug_aranges    00000040 0000000000000000 DEBUG
+  5 .debug_ranges     00000030 0000000000000000 DEBUG
+  6 .debug_str        00000408 0000000000000000 DEBUG
+  7 .debug_pubnames   000000b8 0000000000000000 DEBUG
+  8 .debug_pubtypes   000002ec 0000000000000000 DEBUG
+  9 .riscv.attributes 0000002b 0000000000000000 
+ 10 .debug_frame      00000050 0000000000000000 DEBUG
+ 11 .debug_line       00000067 0000000000000000 DEBUG
+ 12 .comment          00000013 0000000000000000 
+ 13 .symtab           00000150 0000000000000000 
+ 14 .shstrtab         000000b7 0000000000000000 
+ 15 .strtab           0000002c 0000000000000000 
+
+#SYMBOL TABLE：符号表，从中我们可以看到程序中所有符号的地址。例如 _start 函数就位于入口地址上
+
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*  0000000000000000 1z7jek7q0s59glk
+0000000000011120 l       .text  0000000000000000 
+0000000000011120 l       .text  0000000000000000 
+0000000000011120 l       .text  0000000000000000 
+0000000000011120 l       .text  0000000000000000 
+0000000000011124 l       .text  0000000000000000 
+0000000000011124 l       .text  0000000000000000 
+0000000000000000 l       .debug_info    0000000000000000 
+0000000000000000 l       .debug_line    0000000000000000 .Lline_table_start0
+0000000000000000 l       .debug_ranges  0000000000000000 
+0000000000011124 l       .text  0000000000000000 
+0000000000000000 l       .debug_frame   0000000000000000 
+0000000000011120 g     F .text  0000000000000004 _start
+```
   
