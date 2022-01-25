@@ -144,3 +144,320 @@ riscv64-unknown-elf-gdb: command not found
 exit
 
 Script done on 2022-01-25 00:32:41+0800
+Script started on 2022-01-25 16:18:38+0800
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ 
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ cd [K[K[Kcat 1.24ch1[K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$  cat 1.24ch1[K[K[K[K[K[K[K[K[K[K[Kgit merge ch1[C[8Pcd ..rcore[Cgit merge ch1[C[C[C[C[Ccheckout master[C[2Pscript -a 1.24ch1[Ccd /home/taolijie/Desktop/rcore/Rcore/terminalRecord [Cstript [K[C[3Pexit[Criscv64-unknown-elf-gdb     -ex 'file target/riscv64gc-unknown-nonne-elf/release/os'     -ex 'set arch riscv:rv64'     -ex 'target reemote localhost:1234'[A[A[Cqemu-system-riscv64     -machine virt     -nographic     -bios ../bootloader/rustsbi-qemu.bin     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000     -s -S[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstat target/riscv64gc-unknown-none-elf/release/os.bin[C[33Pqemu-system-riscv64     -machine virt     -nographic     -bios ..//bootloader/rustsbi-qemu.bin     -device loader,file=target/riscv644gc-unknown-none-elf/release/os.bin,addr=0x80200000     -s -S[A[A[Criscv64-unknown-elf-gdb     -ex 'file target/riscv64gc-unknown-none-elf/release/os'     -ex 'set arch riscv:rv64'     -ex 'target re[40Pmote localhost:1234'[A[A[Cexit[K
+[K
+[K[A[A[C[C[C[C[C[Cstript [K[K[K[K[K[K[K[K[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ exit
+exit
+
+Script done on 2022-01-25 16:19:53+0800
+Script started on 2022-01-25 16:20:21+0800
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ [K]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/terminalRecord[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/terminalRecord[00m$ cd ..
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore[00m$ gr[Kedit .bashrc
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore[00m$ cd ~
+]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ suod [K[K[Kdo get[Kdit .bashrc
+[sudo] password for taolijie: 
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:30.934[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:30.939[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:31.822[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:31.824[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:32.218[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:32.219[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:32.559[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:32.560[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:35.229[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:35.231[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:51.474[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:36:51.481[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:37:08.339[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:37:08.344[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:3336): [1;33mWARNING[0m **: [34m16:37:21.564[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ sudo gedit .bashrccd ~[Kgedit .bashrc[C[C[1P .bashrc[1P .bashrc[1P .bashrc[1P .bashrc[1P .bashrcv .bashrci .bashrcm .bashrc
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;52r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[52;1H".bashrc" 120L, 3794C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything[m
+[38;5;130mcase[m [35m$-[m [38;5;130min[m
+    *i*[38;5;130m)[m [38;5;130m;;[m[8;7H*[38;5;130m)[m [38;5;130mreturn;;
+esac[m
+
+[34m# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options[m
+[36mHISTCONTROL[m=ignoreboth
+
+[34m# append to the history file, don't overwrite it[m
+[38;5;130mshopt[m [35m-s[m histappend
+
+[34m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[m
+[36mHISTSIZE[m=[31m1000[m
+[36mHISTFILESIZE[m=[31m2000[m
+
+[34m# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.[m
+[38;5;130mshopt[m [35m-s[m checkwinsize
+
+[34m# If set, the pattern "**" used in a pathname expansion context will
+# match all files and zero or more directories and subdirectories.
+#shopt -s globstar
+
+# make less more friendly for non-text input files, see lesspipe(1)[m
+[38;5;130m[[m [38;5;130m-x[m /usr/bin/lesspipe [38;5;130m][m && [38;5;130meval[m [38;5;130m"[m[35m$(SHELL[m[38;5;130m=[m[35m/bin/sh lesspipe[m[35m)[m[38;5;130m"[m
+
+[34m# set variable identifying the chroot you work in (used in the prompt below)[m
+[38;5;130mif [[m [38;5;130m-z[m [38;5;130m"[m[35m${debian_chroot[m[38;5;130m:-[m[35m}[m[38;5;130m"[m [38;5;130m][m [38;5;130m&&[m [38;5;130m[[m [38;5;130m-r[m /etc/debian_chroot [38;5;130m];[m [38;5;130mthen[m
+    [36mdebian_chroot[m=[35m$([m[35mcat /etc/debian_chroot[m[35m)[m
+[38;5;130mfi[m
+
+[34m# set a fancy prompt (non-color, unless we know we "want" color)[m
+[38;5;130mcase[m [38;5;130m"[m[35m$TERM[m[38;5;130m"[m [38;5;130min[m
+    xterm-color[38;5;130m|[m*-256color[38;5;130m)[m [36mcolor_prompt[m=yes[38;5;130m;;
+esac[m
+
+[34m# uncomment for a colored prompt, if the terminal has the capability; turned
+# off by default to not distract the user: the focus in a terminal window
+# should be on the output of commands, not on the prompt
+#force_color_prompt=yes[m
+
+[38;5;130mif [[m [38;5;130m-n[m [38;5;130m"[m[35m$force_color_prompt[m[38;5;130m"[m [38;5;130m];[m [38;5;130mthen
+[m    [38;5;130mif [[m [38;5;130m-x[m /usr/bin/tput [38;5;130m][m [38;5;130m&&[m tput setaf [31m1[m [38;5;130m>&[m/dev/null[38;5;130m;[m [38;5;130mthen[m[50;9H[34m# We have color support; assume it's compliant with Ecma-48[51;9H# (ISO/IEC-6429). (Lack of such support is extremely rare, and such[m[52;175H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?12$p[?25l[52;175H2[2;1H[?25h[?25l[52;175H3[3;1H[?25h[?25l[52;165H~@k[3;1H[52;165H   [4;1H[52;175H4,0-1[4;1H[?25h[?25l[52;175H5,1  [5;1H[?25h[?25l[52;175H6[6;1H[?25h[?25l[52;175H7[7;1H[?25h[?25l[52;175H8[8;1H[?25h[?25l[52;175H9[9;1H[?25h[?25l[52;165H~@k[9;1H[52;165H   [10;1H[52;175H10,0-1[10;1H[?25h[?25l[52;176H1,1  [11;1H[?25h[?25l[52;176H2[12;1H[?25h[?25l[52;176H3[13;1H[?25h[?25l[52;165H~@k[13;1H[52;165H   [14;1H[52;176H4,0-1[14;1H[?25h[?25l[52;176H5,1  [15;1H[?25h[?25l[52;176H6[16;1H[?25h[?25l[52;176H7,0-1[17;1H[?25h[?25l[52;176H8,1  [18;1H[?25h[?25l[52;176H9[19;1H[?25h[?25l[52;165H~@k[19;1H[52;165H   [20;1H[52;175H20[20;1H[?25h[?25l[52;176H1,0-1[21;1H[?25h[?25l[52;176H2,1  [22;1H[?25h[?25l[52;176H3[23;1H[?25h[?25l[52;176H4[24;1H[?25h[?25l[52;176H5,0-1[25;1H[?25h[?25l[52;176H6,1  [26;1H[?25h[?25l[52;165H~@k[26;1H[52;165H   [27;1H[52;176H7[27;1H[?25h[?25l[52;176H8[28;1H[?25h[?25l[52;176H9,0-1[29;1H[?25h[?25l[52;165H~@k[29;1H[52;165H   [30;1H[52;175H30,1  [30;1H[?25h[?25l
+[38;5;130m[106m[[22C][m[52;176H1[31;1H[?25h[?25l[38;5;130m[[22C][m[52;176H2,0-1[32;1H[?25h[?25l[52;176H3,1  [33;1H[?25h[?25l[52;165H~@k[33;1H[52;165H   [34;1H[52;176H4[34;1H[?25h[?25l[52;176H5[35;1H[?25h[?25l[52;176H6[36;1H[?25h[?25l[52;165H~@k[36;1H[52;165H   [37;1H[52;176H7,0-1[37;1H[?25h[?25l[52;176H8,1  [38;1H[?25h[?25l[52;176H9[39;1H[?25h[?25l[52;175H40[40;1H[?25h[?25l[52;176H1[41;1H[?25h[?25l[52;176H2,0-1[42;1H[?25h[?25l[52;176H3,1  [43;1H[?25h[?25l[52;176H4[44;1H[?25h[?25l[52;176H5[45;1H[?25h[?25l[52;176H6[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;9H[34m# a case would tend to support setf rather than setaf.)[m[52;1H[K[52;175H47,0-1[9C1%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;9H[36mcolor_prompt[m=yes[52;175H[K[52;175H48,1[11C2%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130melse[m[52;175H[K[52;175H49,1[11C4%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;9H[36mcolor_prompt[m=[52;175H[K[52;175H50,1-8[9C5%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130mfi[m[52;175H[K[52;175H51,1-8[9C7%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H52,1-8[9C8%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H53,1-8[8C10%[46;8H[?25h[?25l[52;165H^[[46;8H[52;167HO[46;8H[52;165H   [46;8H[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif [[m [38;5;130m"[m[35m$color_prompt[m[38;5;130m"[m [38;5;130m=[m [31myes[m [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H54,1[10C11%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[35mPS1[m[38;5;130m='[m[31m${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ [m[38;5;130m'[m[52;175H[K[52;175H55,1-8[8C13%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130melse[m[52;175H[K[52;175H56,1[10C14%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;5H[35mPS1[m[38;5;130m='[m[31m${debian_chroot:+($debian_chroot)}\u@\h:\w\$ [m[38;5;130m'[m[52;175H[K[52;175H57,1[10C15%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H58,0-1[8C17%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130munset[m[36m color_prompt force_color_prompt[m[52;175H[K[52;175H59,1[10C18%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H60,1[10C20%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# If this is an xterm set the title to user@host:dir[m[52;175H[K[52;175H61,1[10C21%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mcase[m [38;5;130m"[m[35m$TERM[m[38;5;130m"[m [38;5;130min[m[52;175H[K[52;175H62,1[10C23%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1Hxterm*[38;5;130m|[mrxvt*[38;5;130m)[m[52;175H[K[52;175H63,1[10C24%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[35mPS1[m[38;5;130m="[m[35m\[\e[m[31m]0;[m[35m${debian_chroot[m[38;5;130m:+([m[35m$debian_chroot[m[38;5;130m)[m[35m}[m[35m\u[m[31m@[m[35m\h[m[31m: [m[35m\w\a\][m[35m$PS1[m[38;5;130m"[m[52;175H[K[52;175H64,1[10C26%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130m;;[m[52;175H[K[52;175H65,0-1[8C27%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H*[38;5;130m)[m[52;175H[K[52;175H66,1[10C28%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130m;;[m[52;175H[K[52;175H67,1[10C30%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mesac[m[52;175H[K[52;175H68,1[10C31%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H69,1[10C33%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# enable color support of ls and also add handy aliases[m[52;175H[K[52;175H70,1[10C34%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif [[m [38;5;130m-x[m /usr/bin/dircolors [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H71,1[10C36%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130mtest[m [38;5;130m-r[m ~/.dircolors [38;5;130m&&[m [38;5;130meval[m [38;5;130m"[m[35m$([m[35mdircolors -b ~/.dircolors[m[35m)[m[38;5;130m"[m [38;5;130m||[m [38;5;130meval[m [38;5;130m"[m[35m$([m[35mdircolors -b[m[35m)[m[38;5;130m"[m[52;175H[K[52;175H72,1[10C37%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36mls[m[38;5;130m='[m[31mls --color=auto[m[38;5;130m'[m[52;175H[K[52;175H73,1[10C39%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[34m#alias dir='dir --color=auto'[m[52;175H[K[52;175H74,0-1[8C40%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[34m#alias vdir='vdir --color=auto'[m[52;175H[K[52;175H75,1[10C42%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H76,1[10C43%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36mgrep[m[38;5;130m='[m[31mgrep --color=auto[m[38;5;130m'[m[52;175H[K[52;175H77,1[10C44%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36mfgrep[m[38;5;130m='[m[31mfgrep --color=auto[m[38;5;130m'[m[52;175H[K[52;175H78,1[10C46%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36megrep[m[38;5;130m='[m[31megrep --color=auto[m[38;5;130m'[m[52;175H[K[52;175H79,1[10C47%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H80,1[10C49%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H81,0-1[8C50%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# colored GCC warnings and errors[m[52;175H[K[52;175H82,1[10C52%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'[m[52;175H[K[52;175H83,1[10C53%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H84,1[10C55%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# some more ls aliases[m[52;175H[K[52;175H85,1[10C56%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias [m[36mll[m[38;5;130m='[m[31mls -alF[m[38;5;130m'[m[52;175H[K[52;175H86,0-1[8C57%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias [m[36mla[m[38;5;130m='[m[31mls -A[m[38;5;130m'[m[52;175H[K[52;175H87,1[10C59%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias[m [36ml[m=[38;5;130m'[m[31mls -CF[m[38;5;130m'[m[52;175H[K[52;175H88,1[10C60%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H89,0-1[8C62%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# Add an "alert" alias for long running commands.  Use like so:[m[52;175H[K[52;175H90,1[10C63%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m#   sleep 10; alert[m[52;175H[K[52;175H91,1[10C65%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias [m[36malert[m[38;5;130m='[m[31mnotify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e [m[38;5;130m'[m\[38;5;130m''[ms/^\s*[38;5;130m[[m0[38;5;130m-9][m\+\s*//;s/[38;5;130m[;&|][m\s*alert$//[38;5;130m'[m[31m\[m[38;5;130m''[m[31m)"[m[38;5;130m'[m[52;175H[K[52;175H92,1[10C66%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H93,1[10C68%[46;1H[?25h[?25l[52;165H^[[46;1H[52;167HO[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H[34m# Alias definitions.[m[52;175H[K[52;175H94,0-1[8C69%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# You may want to put all your additions into a separate file like[m[52;175H[K[52;175H95,1[10C71%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# ~/.bash_aliases, instead of adding them here directly.[m[52;175H[K[52;175H96,1[10C72%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# See /usr/share/doc/bash-doc/examples in the bash-doc package.[m[52;175H[K[52;175H97,1[10C73%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H98,0-1[8C75%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif [[m [38;5;130m-f[m ~/.bash_aliases [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H99,1[10C76%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;4H[38;5;130m . [m~/.bash_aliases[52;175H[K[52;175H100,1[9C78%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H101,1[9C79%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H102,1[9C81%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# enable programmable completion features (you don't need to enable[m[52;175H[K[52;175H103,0-1[7C82%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# this, if it's already enabled in /etc/bash.bashrc and /etc/profile[m[52;175H[K[52;175H104,1[9C84%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# sources /etc/bash.bashrc).[m[52;175H[K[52;175H105,1[9C85%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif ![m [38;5;130mshopt[m [35m-oq[m posix[38;5;130m;[m [38;5;130mthen[m[52;175H[K[52;175H106,1[9C86%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;3H[38;5;130mif [[m [38;5;130m-f[m /usr/share/bash-completion/bash_completion [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H107,0-1[7C88%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;4H[38;5;130m . [m/usr/share/bash-completion/bash_completion[52;175H[K[52;175H108,1[9C89%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;3H[38;5;130melif[m [38;5;130m[[m [38;5;130m-f[m /etc/bash_completion [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H109,1[9C91%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;4H[38;5;130m . [m/etc/bash_completion[52;175H[K[52;175H110,1[9C92%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;3H[38;5;130mfi[m[52;175H[K[52;175H111,1[9C94%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H112,1[9C95%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H[38;5;130m. "[m[35m$HOME[m[31m/.cargo/env[m[38;5;130m"[m[52;175H[K[52;175H113,1[9C97%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H114,1[9C98%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H115,1[9CBot[46;1H[?25h[?25l[52;177H6[47;1H[?25h[?25l[52;177H7[48;1H[?25h[?25l[52;177H8[49;1H[?25h[?25l[52;177H9,0-1[50;1H[?25h[?25l[52;176H20[51;1H[?25h[?25l[52;165H^[[51;1H[52;167HO[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H^[[51;1H[52;167HO[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H^[[51;1H[52;167HO[51;1H[52;165H   [51;1H[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;176H19[50;1H[?25h[?25l[52;165H~@k[50;1H[52;165H   [49;1H[52;177H8,1  [49;1H[?25h[?25l[52;177H7[48;1H[?25h[?25l[52;177H6[47;1H[?25h[?25l[52;165H~@k[47;1H[52;165H   [46;1H[52;177H5[46;1H[?25h[?25l[52;177H4[45;1H[?25h[?25l[52;177H3[44;1H[?25h[?25l[52;177H2[43;1H[?25h[?25l[52;177H1[42;1H[?25h[?25l[52;177H0[41;1H[?25h[?25l[52;176H09[40;1H[?25h[?25l[52;177H8[39;1H[?25h[?25l[52;177H7,0-1[38;1H[?25h[?25l[52;177H6,1  [37;1H[?25h[?25l[52;165H~@k[37;1H[52;165H   [36;1H[52;177H5[36;1H[?25h[?25l[52;177H4[35;1H[?25h[?25l[52;177H3,0-1[34;1H[?25h[?25l[52;177H2,1  [33;1H[?25h[?25l[52;165H~@k[33;1H[52;165H   [32;1H[52;177H1[32;1H[?25h[?25l[52;177H0[31;1H[?25h[?25l[52;175H99,1 [30;1H[?25h[?25l[52;165H~@k[30;1H[52;165H   [29;1H[52;176H8,0-1[29;1H[?25h[?25l[52;176H7,1  [28;1H[?25h[?25l[52;176H6[27;1H[?25h[?25l[52;176H5[26;1H[?25h[?25l[52;176H4,0-1[25;1H[?25h[?25l[52;176H3,1  [24;1H[?25h[?25l[52;176H2[23;1H[?25h[?25l[52;176H1[22;1H[?25h[?25l[52;176H0[21;1H[?25h[?25l[52;175H89,0-1[20;1H[?25h[?25l[52;165H~@k[20;1H[52;165H   [19;1H[52;176H8,1  [19;1H[?25h[?25l[52;176H7[18;1H[?25h[?25l[52;176H6,0-1[17;1H[?25h[?25l[52;176H5,1  [16;1H[?25h[?25l[52;176H4[15;1H[?25h[?25l[52;176H3[14;1H[?25h[?25l[52;165H~@k[14;1H[52;165H   [13;1H[52;176H2[13;1H[?25h[?25l[52;176H1,0-1[12;1H[?25h[?25l[52;176H0,1  [11;1H[?25h[?25l[52;175H79[10;1H[?25h[?25l[52;165H~@k[10;1H[52;165H   [9;1H[52;176H8[9;1H[?25h[?25l[52;176H7[8;1H[?25h[?25l[52;176H6[7;1H[?25h[?25l[52;176H5[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H[35mPS1[m[38;5;130m="[m[35m\[\e[m[31m]0;[m[35m${debian_chroot[m[38;5;130m:+([m[35m$debian_chroot[m[38;5;130m)[m[35m}[m[35m\u[m[31m@[m[35m\h[m[31m: [m[35m\w\a\][m[35m$PS1[m[38;5;130m"[m[52;175H[K[52;175H74,0-1[8C98%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1Hxterm*[38;5;130m|[mrxvt*[38;5;130m)[m[52;175H[K[52;175H73,1[10C97%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mcase[m [38;5;130m"[m[35m$TERM[m[38;5;130m"[m [38;5;130min[m[52;175H[K[52;175H72,1[10C95%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# If this is an xterm set the title to user@host:dir[m[52;175H[K[52;175H71,1[10C94%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H70,1[10C92%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130munset[m[36m color_prompt force_color_prompt[m[52;175H[K[52;175H69,1[10C91%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[38;5;130mfi[m[52;175H[K[52;175H68,1[10C89%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H[35mPS1[m[38;5;130m='[m[31m${debian_chroot:+($debian_chroot)}\u@\h:\w\$ [m[38;5;130m'[m[52;175H[K[52;175H67,1[10C88%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130melse[m[52;175H[K[52;175H66,1[10C86%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;5H[35mPS1[m[38;5;130m='[m[31m${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ [m[38;5;130m'[m[52;175H[K[52;175H65,0-1[8C85%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mif [[m [38;5;130m"[m[35m$color_prompt[m[38;5;130m"[m [38;5;130m=[m [31myes[m [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H64,1[10C84%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H63,1[10C82%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[38;5;130mfi[m[52;175H[K[52;175H62,1[10C81%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H[38;5;130mfi[m[52;175H[K[52;175H61,1[10C79%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;9H[36mcolor_prompt[m=[52;175H[K[52;175H60,1[10C78%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H[38;5;130melse[m[52;175H[K[52;175H59,1[10C76%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;9H[36mcolor_prompt[m=yes[52;175H[K[52;175H58,0-1[8C75%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;9H[34m# a case would tend to support setf rather than setaf.)[m[52;175H[K[52;175H57,1[10C73%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;9H[34m# (ISO/IEC-6429). (Lack of such support is extremely rare, and such[m[52;175H[K[52;175H56,1[10C72%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;9H[34m# We have color support; assume it's compliant with Ecma-48[m[52;175H[K[52;175H55,1-8[8C71%[6;8H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H[38;5;130mif [[m [38;5;130m-x[m /usr/bin/tput [38;5;130m][m [38;5;130m&&[m tput setaf [31m1[m [38;5;130m>&[m/dev/null[38;5;130m;[m [38;5;130mthen[m[52;175H[K[52;175H54,1[10C69%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mif [[m [38;5;130m-n[m [38;5;130m"[m[35m$force_color_prompt[m[38;5;130m"[m [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H53,1-8[8C68%[6;8H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H52,1-8[8C66%[6;8H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m#force_color_prompt=yes[m[52;175H[K[52;175H51,1-8[8C65%[6;8H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# should be on the output of commands, not on the prompt[m[52;175H[K[52;175H50,1-8[8C63%[6;8H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# off by default to not distract the user: the focus in a terminal window[m[52;175H[K[52;175H49,1[10C62%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[34m# uncomment for a colored prompt, if the terminal has the capability; turned[m[52;175H[K[52;175H48,1[10C60%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H47,0-1[8C59%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mesac[m[52;175H[K[52;175H46,1[10C57%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;5Hxterm-color[38;5;130m|[m*-256color[38;5;130m)[m [36mcolor_prompt[m=yes[38;5;130m;;[m[52;175H[K[52;175H45,1[10C56%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mcase[m [38;5;130m"[m[35m$TERM[m[38;5;130m"[m [38;5;130min[m[52;175H[K[52;175H44,1[10C55%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# set a fancy prompt (non-color, unless we know we "want" color)[m[52;175H[K[52;175H43,1[10C53%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[52;175H[K[52;175H42,0-1[8C52%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mfi[m[52;175H[K[52;175H41,1[10C50%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H[36mdebian_chroot[m=[35m$([m[35mcat /etc/debian_chroot[m[35m)[m[52;175H[K[52;175H40,1[10C49%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[38;5;130mif [[m [38;5;130m-z[m [38;5;130m"[m[35m${debian_chroot[m[38;5;130m:-[m[35m}[m[38;5;130m"[m [38;5;130m][m [38;5;130m&&[m [38;5;130m[[m [38;5;130m-r[m /etc/debian_chroot [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H39,1[10C47%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# set variable identifying the chroot you work in (used in the prompt below)[m[52;175H[K[52;175H38,1[10C46%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H37,0-1[8C44%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130m[[m [38;5;130m-x[m /usr/bin/lesspipe [38;5;130m][m && [38;5;130meval[m [38;5;130m"[m[35m$(SHELL[m[38;5;130m=[m[35m/bin/sh lesspipe[m[35m)[m[38;5;130m"[m[52;175H[K[52;175H36,1[10C43%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[34m# make less more friendly for non-text input files, see lesspipe(1)[m[52;175H[K[52;175H35,1[10C42%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H34,1[10C40%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m#shopt -s globstar[m[52;175H[K[52;175H33,1[10C39%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[34m# match all files and zero or more directories and subdirectories.[m[52;175H[K[52;175H32,0-1[8C37%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# If set, the pattern "**" used in a pathname expansion context will[m[6;1H[38;5;130m[106m[[22C][m[52;175H[K[52;175H31,1[10C36%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[7;1H[38;5;130m[[22C][m[52;175H[K[52;175H30,1[10C34%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[38;5;130mshopt[m [35m-s[m checkwinsize[52;175H[K[52;175H29,0-1[8C33%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# update the values of LINES and COLUMNS.[m[52;175H[K[52;175H28,1[10C31%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# check the window size after each command and, if necessary,[m[52;175H[K[52;175H27,1[10C30%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H26,1[10C28%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[1;1H[36mHISTFILESIZE[m=[31m2000[m[52;175H[K[52;175H25,0-1[8C27%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[36mHISTSIZE[m=[31m1000[m[52;175H[K[52;175H24,1[10C26%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)[m[52;175H[K[52;175H23,1[10C24%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H22,1[10C23%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mshopt[m [35m-s[m histappend[52;175H[K[52;175H21,0-1[8C21%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# append to the history file, don't overwrite it[m[52;175H[K[52;175H20,1[10C20%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H19,1[10C18%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[36mHISTCONTROL[m=ignoreboth[52;175H[K[52;175H18,1[10C17%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# See bash(1) for more options[m[52;175H[K[52;175H17,0-1[8C15%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# don't put duplicate lines or lines starting with space in the history.[m[52;175H[K[52;175H16,1[10C14%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[52;175H[K[52;175H15,1[10C13%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mesac[m[52;175H[K[52;175H14,0-1[8C11%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;7H*[38;5;130m)[m [38;5;130mreturn;;[m[52;175H[K[52;175H13,1[10C10%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;5H*i*[38;5;130m)[m [38;5;130m;;[m[52;175H[K[52;175H12,1[11C8%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[38;5;130mcase[m [35m$-[m [38;5;130min[m[52;175H[K[52;175H11,1[11C7%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# If not running interactively, don't do anything[m[52;175H[K[52;175H10,0-1[9C5%[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [6;1H[1;51r[1;1H[L[1;52r[52;175H[K[52;175H9,1[12C4%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# for examples[m[52;175H[K[52;175H8,1[12C2%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)[m[52;175H[K[52;175H7,1[12C1%[6;1H[?25h[?25l[1;51r[1;1H[L[1;52r[1;1H[34m# ~/.bashrc: executed by bash(1) for non-login shells.[m[52;175H[K[52;175H6,1[11CTop[6;1H[?25h[?25l[52;165H~@k[6;1H[52;165H   [5;1H[52;175H5[5;1H[?25h[?25l[52;175H4,0-1[4;1H[?25h[?25l[52;175H3,1  [3;1H[?25h[?25l[52;165H~@k[3;1H[52;165H   [2;1H[52;175H2[2;1H[?25h[?25l[52;175H1[1;1H[?25h[?25l[52;165H~@k[1;1H[52;165H   [1;1H[?25h[?25l[52;165H~@k[1;1H[52;165H   [1;1H[?25h[?25l[52;165H~@k[1;1H[52;165H   [1;1H[?25h[?25l[52;165H^[[1;1H[52;167HO[1;1H[52;165H   [1;1H[52;165H~@k[1;1H[52;165H   [1;1H[?25h[?25l[52;165H~@k[1;1H[52;165H   [1;1H[?25h[?25l[52;165H~@k[1;1H[52;165H   [1;1H[?25h[?25l[52;175H2[2;1H[?25h[?25l[52;165H~@k[2;1H[52;165H   [3;1H[52;175H3[3;1H[?25h[?25l[52;175H4,0-1[4;1H[?25h[?25l[52;175H5,1  [5;1H[?25h[?25l[52;165H~@k[5;1H[52;165H   [6;1H[52;175H6[6;1H[?25h[?25l[52;175H7[7;1H[?25h[?25l[52;175H8[8;1H[?25h[?25l[52;175H9[9;1H[?25h[?25l[52;175H10,0-1[10;1H[?25h[?25l[52;176H1,1  [11;1H[?25h[?25l[52;176H2[12;1H[?25h[?25l[52;176H3[13;1H[?25h[?25l[52;176H4,0-1[14;1H[?25h[?25l[52;176H5,1  [15;1H[?25h[?25l[52;176H6[16;1H[?25h[?25l[52;176H7,0-1[17;1H[?25h[?25l[52;176H8,1  [18;1H[?25h[?25l[52;176H9[19;1H[?25h[?25l[52;175H20[20;1H[?25h[?25l[52;176H1,0-1[21;1H[?25h[?25l[52;176H2,1  [22;1H[?25h[?25l[52;165H^[[22;1H[52;167HO[22;1H[52;165H   [22;1H[52;176H3[23;1H[?25h[?25l[52;176H4[24;1H[?25h[?25l[52;176H5,0-1[25;1H[?25h[?25l[52;176H6,1  [26;1H[?25h[?25l[52;176H7[27;1H[?25h[?25l[52;176H8[28;1H[?25h[?25l[52;176H9,0-1[29;1H[?25h[?25l[52;175H30,1  [30;1H[?25h[?25l
+[38;5;130m[106m[[22C][m[52;176H1[31;1H[?25h[?25l[38;5;130m[[22C][m[52;176H2,0-1[32;1H[?25h[?25l[52;176H3,1  [33;1H[?25h[?25l[52;176H4[34;1H[?25h[?25l[52;176H5[35;1H[?25h[?25l[52;176H6[36;1H[?25h[?25l[52;176H7,0-1[37;1H[?25h[?25l[52;176H8,1  [38;1H[?25h[?25l[52;176H9[39;1H[?25h[?25l[52;165H^[[39;1H[52;165H  [39;1H[52;175H40[40;1H[?25h[?25l[52;176H1[41;1H[?25h[?25l[52;176H2,0-1[42;1H[?25h[?25l[52;176H3,1  [43;1H[?25h[?25l[52;176H4[44;1H[?25h[?25l[52;176H5[45;1H[?25h[?25l[52;176H6[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;9H[34m# a case would tend to support setf rather than setaf.)[m[52;175H[K[52;175H47,0-1[9C1%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;9H[36mcolor_prompt[m=yes[52;175H[K[52;175H48,1[11C2%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130melse[m[52;175H[K[52;175H49,1[11C4%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;9H[36mcolor_prompt[m=[52;175H[K[52;175H50,1-8[9C5%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130mfi[m[52;175H[K[52;175H51,1-8[9C7%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H52,1-8[9C8%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H53,1-8[8C10%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif [[m [38;5;130m"[m[35m$color_prompt[m[38;5;130m"[m [38;5;130m=[m [31myes[m [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H54,1[10C11%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[35mPS1[m[38;5;130m='[m[31m${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ [m[38;5;130m'[m[52;175H[K[52;175H55,1-8[8C13%[46;8H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130melse[m[52;175H[K[52;175H56,1[10C14%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[35mPS1[m[38;5;130m='[m[31m${debian_chroot:+($debian_chroot)}\u@\h:\w\$ [m[38;5;130m'[m[52;175H[K[52;175H57,1[10C15%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H58,0-1[8C17%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130munset[m[36m color_prompt force_color_prompt[m[52;175H[K[52;175H59,1[10C18%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H60,1[10C20%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# If this is an xterm set the title to user@host:dir[m[52;175H[K[52;175H61,1[10C21%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mcase[m [38;5;130m"[m[35m$TERM[m[38;5;130m"[m [38;5;130min[m[52;175H[K[52;175H62,1[10C23%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1Hxterm*[38;5;130m|[mrxvt*[38;5;130m)[m[52;175H[K[52;175H63,1[10C24%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[35mPS1[m[38;5;130m="[m[35m\[\e[m[31m]0;[m[35m${debian_chroot[m[38;5;130m:+([m[35m$debian_chroot[m[38;5;130m)[m[35m}[m[35m\u[m[31m@[m[35m\h[m[31m: [m[35m\w\a\][m[35m$PS1[m[38;5;130m"[m[52;175H[K[52;175H64,1[10C26%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130m;;[m[52;175H[K[52;175H65,0-1[8C27%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H*[38;5;130m)[m[52;175H[K[52;175H66,1[10C28%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130m;;[m[52;175H[K[52;175H67,1[10C30%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mesac[m[52;175H[K[52;175H68,1[10C31%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H69,1[10C33%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# enable color support of ls and also add handy aliases[m[52;175H[K[52;175H70,1[10C34%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif [[m [38;5;130m-x[m /usr/bin/dircolors [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H71,1[10C36%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130mtest[m [38;5;130m-r[m ~/.dircolors [38;5;130m&&[m [38;5;130meval[m [38;5;130m"[m[35m$([m[35mdircolors -b ~/.dircolors[m[35m)[m[38;5;130m"[m [38;5;130m||[m [38;5;130meval[m [38;5;130m"[m[35m$([m[35mdircolors -b[m[35m)[m[38;5;130m"[m[52;175H[K[52;175H72,1[10C37%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36mls[m[38;5;130m='[m[31mls --color=auto[m[38;5;130m'[m[52;175H[K[52;175H73,1[10C39%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[34m#alias dir='dir --color=auto'[m[52;175H[K[52;175H74,0-1[8C40%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[34m#alias vdir='vdir --color=auto'[m[52;175H[K[52;175H75,1[10C42%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H76,1[10C43%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36mgrep[m[38;5;130m='[m[31mgrep --color=auto[m[38;5;130m'[m[52;175H[K[52;175H77,1[10C44%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36mfgrep[m[38;5;130m='[m[31mfgrep --color=auto[m[38;5;130m'[m[52;175H[K[52;175H78,1[10C46%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;5H[38;5;130malias [m[36megrep[m[38;5;130m='[m[31megrep --color=auto[m[38;5;130m'[m[52;175H[K[52;175H79,1[10C47%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H80,1[10C49%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H81,0-1[8C50%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# colored GCC warnings and errors[m[52;175H[K[52;175H82,1[10C52%[46;1H[?25h[?25l[52;165H^[[46;1H[52;167HO[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H[34m#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'[m[52;175H[K[52;175H83,1[10C53%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H84,1[10C55%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# some more ls aliases[m[52;175H[K[52;175H85,1[10C56%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias [m[36mll[m[38;5;130m='[m[31mls -alF[m[38;5;130m'[m[52;175H[K[52;175H86,0-1[8C57%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias [m[36mla[m[38;5;130m='[m[31mls -A[m[38;5;130m'[m[52;175H[K[52;175H87,1[10C59%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias[m [36ml[m=[38;5;130m'[m[31mls -CF[m[38;5;130m'[m[52;175H[K[52;175H88,1[10C60%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H89,0-1[8C62%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# Add an "alert" alias for long running commands.  Use like so:[m[52;175H[K[52;175H90,1[10C63%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m#   sleep 10; alert[m[52;175H[K[52;175H91,1[10C65%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130malias [m[36malert[m[38;5;130m='[m[31mnotify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e [m[38;5;130m'[m\[38;5;130m''[ms/^\s*[38;5;130m[[m0[38;5;130m-9][m\+\s*//;s/[38;5;130m[;&|][m\s*alert$//[38;5;130m'[m[31m\[m[38;5;130m''[m[31m)"[m[38;5;130m'[m[52;175H[K[52;175H92,1[10C66%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H93,1[10C68%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# Alias definitions.[m[52;175H[K[52;175H94,0-1[8C69%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# You may want to put all your additions into a separate file like[m[52;175H[K[52;175H95,1[10C71%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# ~/.bash_aliases, instead of adding them here directly.[m[52;175H[K[52;175H96,1[10C72%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# See /usr/share/doc/bash-doc/examples in the bash-doc package.[m[52;175H[K[52;175H97,1[10C73%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H98,0-1[8C75%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif [[m [38;5;130m-f[m ~/.bash_aliases [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H99,1[10C76%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;4H[38;5;130m . [m~/.bash_aliases[52;175H[K[52;175H100,1[9C78%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H101,1[9C79%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H102,1[9C81%[46;1H[?25h[?25l[52;165H^[[46;1H[52;167HO[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H[34m# enable programmable completion features (you don't need to enable[m[52;175H[K[52;175H103,0-1[7C82%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# this, if it's already enabled in /etc/bash.bashrc and /etc/profile[m[52;175H[K[52;175H104,1[9C84%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[34m# sources /etc/bash.bashrc).[m[52;175H[K[52;175H105,1[9C85%[46;1H[?25h[?25l[52;165H~@k[46;1H[52;165H   [46;1H[1;51r[51;1H
+[1;52r[51;1H[38;5;130mif ![m [38;5;130mshopt[m [35m-oq[m posix[38;5;130m;[m [38;5;130mthen[m[52;175H[K[52;175H106,1[9C86%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;3H[38;5;130mif [[m [38;5;130m-f[m /usr/share/bash-completion/bash_completion [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H107,0-1[7C88%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;4H[38;5;130m . [m/usr/share/bash-completion/bash_completion[52;175H[K[52;175H108,1[9C89%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;3H[38;5;130melif[m [38;5;130m[[m [38;5;130m-f[m /etc/bash_completion [38;5;130m];[m [38;5;130mthen[m[52;175H[K[52;175H109,1[9C91%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;4H[38;5;130m . [m/etc/bash_completion[52;175H[K[52;175H110,1[9C92%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;3H[38;5;130mfi[m[52;175H[K[52;175H111,1[9C94%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130mfi[m[52;175H[K[52;175H112,1[9C95%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[51;1H[38;5;130m. "[m[35m$HOME[m[31m/.cargo/env[m[38;5;130m"[m[52;175H[K[52;175H113,1[9C97%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H114,1[9C98%[46;1H[?25h[?25l[1;51r[51;1H
+[1;52r[52;175H[K[52;175H115,1[9CBot[46;1H[?25h[?25l[52;177H6[47;1H[?25h[?25l[52;177H7[48;1H[?25h[?25l[52;177H8[49;1H[?25h[?25l[52;177H9,0-1[50;1H[?25h[?25l[52;176H20[51;1H[?25h[?25l[52;165H^[[51;1H[52;167HO[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H^[[51;1H[52;167HO[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l[52;165H~@k[51;1H[52;165H   [51;1H[?25h[?25l
+[1m-- INSERT --[m[52;175H[K[52;175H120,1[9CBot[51;1H[38;5;130mexport[m[36m PATH=[m/home/yan/share/usr/local/arm/[31m3[m.[?25h[?25l[52;1H[K[51;45H[31m4[m.[31m1[m/bin:[35m$PATH[m[52;175H120,57[8CBot[51;57H[?25h[?25l[52;165Hi[51;57H[52;165H [51;57H
+[1m-- INSERT --[m[52;175H[K[52;175H120,57[8CBot[51;57H[?25h[?25l[35mH[m[51;57H[K[52;180H6[51;56H[?25h[?25l[52;180H5[51;55H[?25h[?25l[52;180H4[51;54H[?25h[?25l[52;180H3[51;53H[?25h[?25l[52;180H2[51;52H[?25h[?25l:[35m$PAH[m[51;56H[K[52;180H1[51;51H[?25h[?25l:[35m$PAH[m[51;55H[K[52;180H0[51;50H[?25h[?25l:[35m$PAH[m[51;54H[K[52;179H49[51;49H[?25h[?25l1:[35m$PAH[m[51;53H[K[52;180H8[51;48H[?25h[?25l:[35m$PAH[m[51;52H[K[52;180H7[51;47H[?25h[?25l4:[35m$PAH[m[51;51H[K[52;180H6[51;46H[?25h[?25l:[35m$PAH[m[51;50H[K[52;180H5[51;45H[?25h[?25l3:[35m$PAH[m[51;49H[K[52;180H4[51;44H[?25h[?25l:[35m$PAH[m[51;48H[K[52;180H3[51;43H[?25h[?25l:[35m$PAH[m[51;47H[K[52;180H2[51;42H[?25h[?25l:[35m$PAH[m[51;46H[K[52;180H1[51;41H[?25h[?25l:[35m$PAH[m[51;45H[K[52;180H0[51;40H[?25h[?25l:[35m$PAH[m[51;44H[K[52;179H39[51;39H[?25h[?25l:[35m$PAH[m[51;43H[K[52;180H8[51;38H[?25h[?25l:[35m$PAH[m[51;42H[K[52;180H7[51;37H[?25h[?25l:[35m$PAH[m[51;41H[K[52;180H6[51;36H[?25h[?25l:[35m$PAH[m[51;40H[K[52;180H5[51;35H[?25h[?25l:[35m$PAH[m[51;39H[K[52;180H4[51;34H[?25h[?25l:[35m$PAH[m[51;38H[K[52;180H3[51;33H[?25h[?25l:[35m$PAH[m[51;37H[K[52;180H2[51;32H[?25h[?25l:[35m$PAH[m[51;36H[K[52;180H1[51;31H[?25h[?25l:[35m$PAH[m[51;35H[K[52;180H0[51;30H[?25h[?25l:[35m$PAH[m[51;34H[K[52;179H29[51;29H[?25h[?25l:[35m$PAH[m[51;33H[K[52;180H8[51;28H[?25h[?25l:[35m$PAH[m[51;32H[K[52;180H7[51;27H[?25h[?25l:[35m$PAH[m[51;31H[K[52;180H6[51;26H[?25h[?25l:[35m$PAH[m[51;30H[K[52;180H5[51;25H[?25h[?25l:[35m$PAH[m[51;29H[K[52;180H4[51;24H[?25h[?25l:[35m$PAH[m[51;28H[K[52;180H3[51;23H[?25h[?25l:[35m$PAH[m[51;27H[K[52;180H2[51;22H[?25h[?25l:[35m$PAH[m[51;26H[K[52;180H1[51;21H[?25h[?25l:[35m$PAH[m[51;25H[K[52;180H0[51;20H[?25h[?25l:[35m$PAH[m[51;24H[K[52;179H19[51;19H[?25h[?25l:[35m$PAH[m[51;23H[K[52;180H8[51;18H[?25h[?25l:[35m$PAH[m[51;22H[K[52;180H7[51;17H[?25h[?25l:[35m$PAH[m[51;21H[K[52;180H6[51;16H[?25h[?25l:[35m$PAH[m[51;20H[K[52;180H5[51;15H[?25h[?25l:[35m$PAH[m[51;19H[K[52;180H4[51;14H[?25h[?25l:[35m$PAH[m[51;18H[K[52;180H3[51;13H[?25h[?25l/home/taolijie/Desktop/rcore/riscv64-unknown:[35m$PAH[?25h[?25l[m-elf-gcc-8.[31m3[m.0-2020.[31m04[m.1-x86_64-linux-ubuntu14/bin:[35m$PAH[?25h[?25l[m[52;180H07[51;107H[?25h[?25l[52;181H8[51;108H[?25h[?25l[52;181H9[51;109H[?25h[?25l[52;180H10[51;110H[?25h[?25l[52;181H1[51;111H[?25h[?25l[35mTH[m[52;181H2[51;112H[?25h[?25l[52;181H3[51;113H[?25h[52;1H[K[51;112H[?25l[52;165H^[[51;112H[52;165H  [51;113H[52;175H120,112[7CBot[51;112H[?25h[?25l[52;165H:[51;112H[52;165H[K[52;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h[?25l[?2004l".bashrc" 120L, 3906C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ sour[Krce .bashrc
+]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ source .bashrc[3Pvim[C[C[C[C[C[C[C[C[7@sudo gedit[C[C[C[C[C[C[C[Ccd ~[Kgedit .bashrc[8Pcd ..[1Pexitgit merge ch1[8Pcd ..rcore[3P..git merge ch1exit[Kcd ..gedit .bashrccd ~[Ksudo gedit .bashrc[7Pvim[C[C[C[C[C[C[C[C[3@source[C[C[C[C[C[C[C[C[K[K]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ [K]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ [K]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ cd qemu-system-riscv64 \
+>     -machine virt \
+>     -nographic \
+>     -bios ../bootloader/rustsbi-qemu.bin \
+>     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.biin,addr=0x80200000 \
+>     -s -S
+bash: cd: too many arguments
+]0;taolijie@taolijie-VirtualBox: ~[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~[00m$ cd ~/Desktop/rcore/Rcore
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore[00m$ ccd [K[K[Kd os
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cd os~/Desktop/rcoree/Rcore[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [C[C[Cqemu-system-riscv64     -machine virt     -nographic     -bios ../bootloader/rustsbi-qeemu.bin     -device loader,file=target/riscv64gc-unknown-none-elf/releasee/os.bin,addr=0x80200000     -s -S
+bash: cd: too many arguments
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cd qemu-system-risscv64     -machine virt     -nographic     -bios ../bootloader/rustsbi-qeemu.bin     -device loader,file=target/riscv64gc-unknown-none-elf/releasee/os.bin,addr=0x80200000     -s -S[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C qemu-system-riscv64     -machine virt     -nographic     -bios ../bootloader/rustsbi-qemu.bin     -device loader,file=target/riscv64gc-unknown-none-elf/release/[1P[A[A[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ [C qemu-system-riscv64     -machine virt     -nographic     -bios ../bootloader/rustsbi-qemu.bin     -device loader,file=target/riscv64gc-unknown-none-elf/release/o[1P[A[A[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ 
+
+
+
+qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ riscv64-unknown-ellf-gdb \
+>     -ex 'file target/riscv64gc-unknown-none-elf/release/os' \
+>     -ex 'set arch riscv:rv64' \
+>     -ex 'target remote localhost:1234'
+[35;1mGNU gdb (SiFive GDB 8.3.0-2020.04.1) 8.3
+[mCopyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "--host=x86_64-linux-gnu --target=riscv64-unknown-elf".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://github.com/sifive/freedom-tools/issues>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Reading symbols from [32mtarget/riscv64gc-unknown-none-elf/release/os[m...
+(No debugging symbols found in target/riscv64gc-unknown-none-elf/release/os)
+The target architecture is assumed to be riscv:rv64
+localhost:1234: Connection timed out.
+(gdb) 
+(gdb) 
+(gdb) q
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ (gdb) x/10i $pc
+bash: syntax error near unexpected token `x/10i'
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu-system-riscv664 \
+>     -machine virt \
+>     -nographic \
+>     -bios ../bootloader/rustsbi-qemu.bin \
+>     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.biin,addr=0x80200000 \
+>     -s -S
+qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu-system-riscv664 \
+>     -machine virt \
+>     -nographic \
+>     -bios ../bootloader/rustsbi-qemu.bin \
+>     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.biin,addr=0x80200000 \
+>     -s -S
+qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objcopy --strrip-all target/riscv64gc-unknown-none-elf/release/os -O binary target/risscv64gc-unknown-none-elf/release/os.bin
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ stat target/riscv664gc-unknown-none-elf/release/os
+  File: target/riscv64gc-unknown-none-elf/release/os
+  Size: 5240      	Blocks: 16         IO Block: 4096   regular file
+Device: 801h/2049d	Inode: 1317434     Links: 1
+Access: (0775/-rwxrwxr-x)  Uid: ( 1000/taolijie)   Gid: ( 1000/taolijie)
+Access: 2022-01-25 00:35:55.832121799 +0800
+Modify: 2022-01-25 00:35:55.816113800 +0800
+Change: 2022-01-25 00:35:55.816113800 +0800
+ Birth: -
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cd ../bootloader/rrustsbi-qemu.bin
+bash: cd: ../bootloader/rustsbi-qemu.bin: No such file or directory
+]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ cd ../bootloader/rrustsbi-qemu.bin[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ stat target/riscv64gc-unknown-none-elf/release/os[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ rust-objcopy --strip-all target/riscv64gc-unknown-none-elf/release/os -O binary target/risscv64gc-unknown-none-elf/release/os.bin[A[A]0;taolijie@taolijie-VirtualBox: ~/Desktop/rcore/Rcore/os[01;32mtaolijie@taolijie-VirtualBox[00m:[01;34m~/Desktop/rcore/Rcore/os[00m$ qemu-system-riscv64     -machine virt     -nographic     -bios ../bootloader/rustsbi-qemu.bin     -device loader,file=target/riscv64gc-unknown-none-elf/release/oss.bin,addr=0x80200000     -s -S[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.[1P[A[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.b[1P[A[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bi[1P[A     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C  [C[C[C-device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 
+[C[C[C-device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,a[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 
+[C[C-device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,ad[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 
+[C-device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,add[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C 
+-device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x8[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x802[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x8020[C[C[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200[C[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x802000[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x8020000[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 [C[C[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000  [C[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 
+[C[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 
+[C[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 
+[C[1P[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C     -device loader,file=target/riscv64gc-unknown-none-elf/release/os.bin,addr=0x80200000 
+[1P[A[A[C[C[C[C[C[C[C

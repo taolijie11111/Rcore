@@ -130,3 +130,5 @@ view  [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee
 >     -s -S
 qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-qemu.bin"
 ```
+  *  change `../bootloader/rustsbi-qemu.bin` to `default`, but can't run
+  
