@@ -198,3 +198,17 @@ SYMBOL TABLE:
 0000000000011120 g     F .text  0000000000000004 _start
 ```
   
+
+  ```s
+  rust-objdump target/riscv64imac-unknown-none-elf/debug/os -d --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:   file format elf64-littleriscv
+#here is little riscv!!!!!!
+#表示elf64小端。一般arm，riscv，x86都是小端，小端是比较主流的。 
+
+Disassembly of section .text:
+
+0000000080200000 <text_start>:
+80200000: 09 a0         j       0x80200002 <text_start+0x2>
+80200002: 01 a0         j       0x80200002 <text_start+0x2>
+  ```
