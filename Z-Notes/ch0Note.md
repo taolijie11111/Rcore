@@ -99,7 +99,7 @@ mod lang_items;
 ```
 
 **step 8:**
-```
+```bash
 cargo build
 ```
 result:
@@ -107,7 +107,7 @@ result:
 >    Finished dev [unoptimized + debuginfo] target(s) in 0.70s
 
 **analyse**
-```
+```bash
 #cd os
 file target/riscv64gc-unknown-none-elf/debug/os
 rust-readobj -h target/riscv64gc-unknown-none-elf/debug/os
@@ -124,7 +124,7 @@ rust-objdump -s target/riscv64gc-unknown-none-elf/debug/os
 view  [rCore](https://rcore-os.github.io/rCore-Tutorial-Book-v3/chapter1/1app-ee-platform.html)  for more information
 
 1. unable to download 
-```
+```bash
  qemu-system-riscv64 \
 >     -machine virt \
 >     -nographic \
@@ -138,7 +138,7 @@ qemu-system-riscv64: Unable to load the RISC-V firmware "../bootloader/rustsbi-q
 
 ## view information with rust-objdump
 
-```s
+```bash
 rust-objdump target/riscv64imac-unknown-none-elf/debug/os -x --arch-name=riscv64
 
 target/riscv64imac-unknown-none-elf/debug/os:   file format elf64-littleriscv
@@ -199,7 +199,7 @@ SYMBOL TABLE:
 ```
   
 
-  ```s
+  ```bash
   rust-objdump target/riscv64imac-unknown-none-elf/debug/os -d --arch-name=riscv64
 
 target/riscv64imac-unknown-none-elf/debug/os:   file format elf64-littleriscv
@@ -212,3 +212,39 @@ Disassembly of section .text:
 80200000: 09 a0         j       0x80200002 <text_start+0x2>
 80200002: 01 a0         j       0x80200002 <text_start+0x2>
   ```
+
+```bash
+  error: cannot find macro `global_asm` in this scope
+  --> src/main.rs:19:1
+   |
+19 | global_asm!(include_str!("entry.asm"));
+   | ^^^^^^^^^^
+   |
+   = note: consider importing this macro:
+           core::arch::global_asm
+```
+add `use core::arch::global_asm `in main.rs
+
+then we get two warning :
+```bash
+warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
+  --> src/main.rs:39:9
+   |
+39 |         llvm_asm!("ecall"
+   |         ^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: the feature `global_asm` has been stable since 1.59.0 and no longer requires an attribute to enable
+  --> src/main.rs:16:12
+   |
+16 | #![feature(global_asm)]
+   |            ^^^^^^^^^^
+   |
+   = note: `#[warn(stable_features)]` on by default
+
+warning: `os` (bin "os") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.19s
+
+OpenSBI v0.6
+```

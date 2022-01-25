@@ -19,6 +19,7 @@
 global_asm!(include_str!("entry.asm"));
 
 use core::panic::PanicInfo;
+use  core::arch::global_asm;
 
 /// 当 panic 发生时会调用该函数
 /// 我们暂时将它的实现为一个死循环

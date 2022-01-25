@@ -765,3 +765,92 @@ taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/terminalRecord$ ls
 taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/terminalRecord$ pwd
 /home/taolijie/Desktop/rcore/Rcore/terminalRecord
 taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/terminalRecord$ 
+
+
+time: 20.15:
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore$ cd os
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ make run
+Makefile:16: *** missing separator.  Stop.
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ ^C
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ make run
+Makefile:16: *** missing separator.  Stop.
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ make run
+Makefile:37: *** missing separator.  Stop.
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ vim Makefile
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ make run
+   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+error: cannot find macro `global_asm` in this scope
+  --> src/main.rs:19:1
+   |
+19 | global_asm!(include_str!("entry.asm"));
+   | ^^^^^^^^^^
+   |
+   = note: consider importing this macro:
+           core::arch::global_asm
+
+warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
+  --> src/main.rs:38:9
+   |
+38 |         llvm_asm!("ecall"
+   |         ^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: `os` (bin "os") generated 1 warning
+error: could not compile `os` due to previous error; 1 warning emitted
+Makefile:20: recipe for target 'kernel' failed
+make: *** [kernel] Error 101
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ rust-objdump target/riscv64imac-unknown-none-elf/debug/os -d --arch-name=riscv64
+
+target/riscv64imac-unknown-none-elf/debug/os:   file format elf64-littleriscv
+
+Disassembly of section .text:
+
+0000000080200000 <text_start>:
+80200000: 09 a0         j       0x80200002 <text_start+0x2>
+80200002: 01 a0         j       0x80200002 <text_start+0x2>
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ ^C
+taolijie@taolijie-VirtualBox:~/Desktop/rcore/Rcore/os$ make run   Compiling os v0.1.0 (/home/taolijie/Desktop/rcore/Rcore/os)
+warning: use of deprecated macro `llvm_asm`: will be removed from the compiler, use asm! instead
+  --> src/main.rs:39:9
+   |
+39 |         llvm_asm!("ecall"
+   |         ^^^^^^^^
+   |
+   = note: `#[warn(deprecated)]` on by default
+
+warning: the feature `global_asm` has been stable since 1.59.0 and no longer requires an attribute to enable
+  --> src/main.rs:16:12
+   |
+16 | #![feature(global_asm)]
+   |            ^^^^^^^^^^
+   |
+   = note: `#[warn(stable_features)]` on by default
+
+warning: `os` (bin "os") generated 2 warnings
+    Finished dev [unoptimized + debuginfo] target(s) in 0.19s
+
+OpenSBI v0.6
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name          : QEMU Virt Machine
+Platform HART Features : RV64ACDFIMSU
+Platform Max HARTs     : 8
+Current Hart           : 0
+Firmware Base          : 0x80000000
+Firmware Size          : 120 KB
+Runtime SBI Version    : 0.2
+
+MIDELEG : 0x0000000000000222
+MEDELEG : 0x000000000000b109
+PMP0    : 0x0000000080000000-0x000000008001ffff (A)
+PMP1    : 0x0000000000000000-0xffffffffffffffff (A,R,W,X)
+OK
+

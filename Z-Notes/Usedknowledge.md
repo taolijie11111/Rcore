@@ -4,6 +4,11 @@
 
 add new file --- touch
 
+annotation:
+* '#' for a line
+* << more line
+
+
 ## markdown
 
 * [annotations](https://blog.csdn.net/wcy23580/article/details/84885989)
@@ -21,6 +26,11 @@ add new file --- touch
 
     * cd zdxh （进入zdxh文件夹）
 
+* code edit
+[code key word](https://www.jianshu.com/p/1f223eb78ad8)
+
+<img src="./images/2.png">
+<img src="./images/3.png">
 
 ## rust
 
