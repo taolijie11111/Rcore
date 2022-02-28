@@ -8,6 +8,11 @@ annotation:
 * '#' for a line
 * << more line
 
+> **script -a 1.24ch1** \
+>  ...  \
+>  **exit**
+
+upset use \ = "\n"
 
 ## markdown
 
